@@ -16,6 +16,8 @@ https://pure-css.github.io/layouts/tucked-menu-vertical/
 
 <script lang="ts">
 import Navigation from '$lib/components/Navigation.svelte';
+import Masthead from '$lib/components/Masthead.svelte';
+
 import { page } from '$app/state';
 import '../app.css';
 	
@@ -23,6 +25,8 @@ let { children, data } = $props();
 </script>
 
 <Navigation />
+
+<Masthead title="Test" />
 
 <div class="container mx-auto max-w-5xl">
 	<div class="flex flex-col md:flex-row">
