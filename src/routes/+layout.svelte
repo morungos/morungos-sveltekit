@@ -1,8 +1,21 @@
+<!-- 
+Our pages contain four sections:
+
+- A brand and navigation bar
+- A masthead
+- Page content
+- A footer
+
+Most of these will be page-specific to some extent, so we should allow them 
+all to be if needed. As with the rest of everything, it's all server-side 
+rendered.
+-->
+
 <script lang="ts">
-	import { page } from '$app/state';
-    import '../app.css';
+import { page } from '$app/state';
+import '../app.css';
 	
-    let { children, data } = $props();
+let { children, data } = $props();
 </script>
 
 <div class="container mx-auto max-w-5xl">
