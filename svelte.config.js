@@ -14,7 +14,7 @@ const config = {
 			strict: false 
 		})
 	},
-	extensions: ['.svelte', '.svx']
+	extensions: ['.svelte', '.svx', '.md']
 };
 
 export default config;
