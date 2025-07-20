@@ -1,16 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import './app.css';
-
-	let { children, data } = $props();
+    import '../app.css';
+	
+    let { children, data } = $props();
 </script>
 
 <div class="container mx-auto max-w-5xl">
 	<div class="flex flex-col md:flex-row">
-		<div
-			class="overflow-y-scroll px-4 mx-2 h-36 border-b-2 md:py-4 md:w-64 md:h-screen md:border-r-2 scrollbar-transparent"
-		>
-			<h3 class="my-4 text-2xl font-bold">Pages</h3>
+		<div>
+			<h3>Pages</h3>
 			<ul>
 				<li>
 					<a
