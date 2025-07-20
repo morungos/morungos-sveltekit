@@ -12,6 +12,7 @@ export default defineConfig({
 					environment: 'browser',
 					browser: {
 						enabled: true,
+						headless: true,
 						provider: 'playwright',
 						instances: [{ browser: 'chromium' }]
 					},
@@ -28,7 +29,7 @@ export default defineConfig({
 					include: ['src/**/*.{test,spec}.{js,ts}'],
 					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
 				}
-			}
+			},
 		]
 	}
 });
