@@ -1,7 +1,7 @@
 export function pathToSlug(path: string) {
-	return path.replace("/src/routes/", "").replace(".md", ".html");
+	return path.replace("/src/content/", "").replace(".md", ".html");
 }
 
 export function slugToPath(slug: string) {
-	return `/src/routes/${slug.replace(".html", ".md")}`;
+	return `/src/content/${slug.replace(".html", ".md")}`;
 }

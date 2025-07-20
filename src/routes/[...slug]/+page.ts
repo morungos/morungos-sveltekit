@@ -1,12 +1,12 @@
-import type { ContentModules } from "$lib/types";
-import { pathToSlug, slugToPath } from "$lib/utils";
+import type { ContentModules } from "$lib/types.js";
+import { pathToSlug, slugToPath } from "$lib/utils.js";
 import { error } from "@sveltejs/kit";
 import type { EntryGenerator, PageLoad } from "./$types";
 
 export const prerender = "auto";
 
 export const load = (async ({ params }) => {
-	const modules = import.meta.glob("/src/routes/**/*.md") as ContentModules;
+	const modules = import.meta.glob("/src/content/**/*.md") as ContentModules;
 
 	const contentModule = modules[slugToPath(params.slug)];
 
@@ -20,7 +20,7 @@ export const load = (async ({ params }) => {
 }) satisfies PageLoad;
 
 export const entries: EntryGenerator = async () => {
-	const modules = import.meta.glob("/src/routes/**/*.md") as ContentModules;
+	const modules = import.meta.glob("/src/content/**/*.md") as ContentModules;
 
 	const entries = Object.keys(modules).map((path) => {
 		return { slug: pathToSlug(path) };
