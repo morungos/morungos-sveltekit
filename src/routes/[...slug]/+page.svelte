@@ -1,12 +1,12 @@
 <script lang="ts">
-	import '$lib/content-styles.css';
-	import type { PageData } from './$types';
+import '$lib/content-styles.css';
+import type { PageData } from './$types';
 
-	interface Props {
-		data: PageData;
-	}
+interface Props {
+    data: PageData;
+}
 
-	let { data }: Props = $props();
+let { data }: Props = $props();
 </script>
 
 <svelte:head
