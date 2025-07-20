@@ -14,10 +14,6 @@ let { data }: Props = $props();
 		name="description"
 		content={data.metadata.description}
 	/>
-	<link
-		href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
-		rel="stylesheet"
-	/>
 </svelte:head>
 
 <h1 class="my-4 text-4xl font-bold">{data.metadata.title}</h1>

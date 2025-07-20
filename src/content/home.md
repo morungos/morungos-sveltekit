@@ -9,7 +9,6 @@ description: template-sveltekit-md-docs provides an example of how markdown docs
 - Svelte components can be imported and used in markdown files
 - Image `src` paths are relative to directory instead of to static files urls and optimized using `@sveltejs/enhanced-img`
 - Code blocks highlighted with `shiki`
-- Math equations are rendered with `katex`
 
 ## Credits
 The use of vite glob imports was based on the approach used by the `shadcn-svelte` docs. Glob importing markdown is also used in the `svelte` docs. This template was also based on what I used for my personal blog.
