@@ -3,6 +3,7 @@ import { pathToSlug } from "$lib/utils";
 import type { LayoutLoad } from "./$types";
 
 export const prerender = "auto";
+export const ssr = true;
 
 export const load = (async () => {
 	const modules = import.meta.glob("/src/content/**/*.md") as ContentModules;
