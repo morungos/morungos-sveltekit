@@ -9,6 +9,9 @@ Our pages contain four sections:
 Most of these will be page-specific to some extent, so we should allow them 
 all to be if needed. As with the rest of everything, it's all server-side 
 rendered.
+
+Main navigation bar shoukd likely have responsive dropdowns; see:
+https://pure-css.github.io/layouts/tucked-menu-vertical/
 -->
 
 <script lang="ts">
