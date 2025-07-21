@@ -2,6 +2,7 @@ import type { ContentModules } from "$lib/types";
 import { pathToSlug } from "$lib/utils";
 import type { LayoutLoad } from "./$types";
 
+export const trailingSlash = 'always';
 export const prerender = "auto";
 export const ssr = true;
 
