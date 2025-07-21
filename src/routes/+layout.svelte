@@ -26,11 +26,11 @@ let { children, data } = $props();
 
 <Navigation />
 
-<Masthead title="Test" />
+<Masthead title={ page.data?.metadata?.title } />
 
 <div class="container mx-auto max-w-5xl">
 	<div class="flex flex-col md:flex-row">
-		<div>
+		<!-- <div>
 			<h3>Pages</h3>
 			<ul>
 				<li>
@@ -53,7 +53,7 @@ let { children, data } = $props();
 					</li>
 				{/each}
 			</ul>
-		</div>
+		</div> -->
 		<div class="overflow-y-scroll w-full md:h-screen scrollbar-transparent">
 			<div class="my-4 mx-4">
 				{@render children()}

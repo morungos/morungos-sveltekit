@@ -3,11 +3,11 @@
         <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2">
                 <div class="pure-menu">
-                    <a href="#" class="pure-menu-heading navbar-brand">Stuart Watt</a>
-                    <a href="#" class="navbar-toggle" id="toggle">
+                    <a href="/" class="pure-menu-item pure-menu-link">Stuart Watt</a>
+                    <button class="navbar-toggle" id="toggle" aria-label="Toggle menu">
                         <s class="bar"></s>
                         <s class="bar"></s>
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
@@ -15,9 +15,11 @@
                     <ul class="pure-menu-list">
                         <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
                         <li class="pure-menu-item"><a href="/about.html" class="pure-menu-link">About</a></li>
-                        <!-- <li class="pure-menu-item"><a href="/posts.html" class="pure-menu-link">Posts</a></li>
+                        <li class="pure-menu-item"><a href="/contact.html" class="pure-menu-link">Contact</a></li>
+                        <!-- 
+                        <li class="pure-menu-item"><a href="/posts.html" class="pure-menu-link">Posts</a></li>
                         <li class="pure-menu-item"><a href="/gallery.html" class="pure-menu-link">Gallery</a></li>
-                        <li class="pure-menu-item"><a href="/contact.html" class="pure-menu-link">Contact</a></li> -->
+                        -->
                     </ul>
                 </div>
             </div>
@@ -31,10 +33,8 @@
     z-index: 1;
     width: 100%;
     top: 0;
-    background-color: #ffd390;
     margin-bottom: 1em;
     -webkit-font-smoothing: antialiased;
-    height: 2.1em;
     overflow: hidden;
     -webkit-transition: height 0.5s;
     -moz-transition: height 0.5s;
@@ -47,7 +47,7 @@
     margin-right: -15px;
 }
 
-.navbar-body .pure-menu-item, .navbar-brand {
+.navbar-body .pure-menu-item {
     padding-left: 15px;
     padding-right: 15px;
 }
