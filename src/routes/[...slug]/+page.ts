@@ -16,7 +16,11 @@ export const load = (async ({ params }) => {
 
 	const { default: component, metadata } = await contentModule().then();
 
-	return { component, metadata };
+	return { 
+        component, 
+        metadata,
+        title: metadata.title,
+    };
 }) satisfies PageLoad;
 
 export const entries: EntryGenerator = async () => {

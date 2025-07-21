@@ -15,5 +15,15 @@ export const load = (async () => {
 
 	slugList = slugList.sort((a, b) => a.slug.localeCompare(b.slug));
 
-	return { slugList };
+    const layoutData: {
+        slugList: Array<{slug: string}>,
+        background: string,
+        title?: string,
+        description?: string
+    } = { 
+        slugList,
+        background: '/src/backgrounds/bg-about.jpg',
+    };
+
+	return layoutData;
 }) satisfies LayoutLoad;

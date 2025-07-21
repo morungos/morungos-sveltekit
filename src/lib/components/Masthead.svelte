@@ -1,5 +1,5 @@
 <script lang="ts">
-let { title }: { title: string } = $props();
+let { title, background } = $props();
 
 const imageModules = import.meta.glob(
     '$lib/../backgrounds/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
@@ -12,13 +12,13 @@ const imageModules = import.meta.glob(
 </script>
 
 <header class="masthead-wrapper" id="menu">
-    <enhanced:img src={ imageModules['/src/backgrounds/bg-about.jpg'] } alt="An alt text" />
+    <enhanced:img src={ imageModules[background ?? '/src/backgrounds/bg-about.jpg'] } alt="An alt text" />
     <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">
             <div class="pure-u-1">
                 <div class="masthead-heading">
-                    <h1>{ title }</h1>
+                    <h1>{ title ?? "" }</h1>
                 </div>
             </div>
         </div>
@@ -66,5 +66,6 @@ const imageModules = import.meta.glob(
 .masthead-heading h1 {
     font-size: 48px;
     margin-top: 20px;
+    min-height: 60px;
 }
 </style>

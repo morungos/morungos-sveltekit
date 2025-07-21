@@ -18,15 +18,15 @@ https://pure-css.github.io/layouts/tucked-menu-vertical/
 import Navigation from '$lib/components/Navigation.svelte';
 import Masthead from '$lib/components/Masthead.svelte';
 
-import { page } from '$app/state';
 import '../app.css';
 	
 let { children, data } = $props();
+import { page } from '$app/state';
 </script>
 
 <Navigation />
 
-<Masthead title={ page.data?.metadata?.title } />
+<Masthead background={ page.data.background} title={ page.data.title} />
 
 <div class="container">
 	<div class="flex flex-col md:flex-row">
