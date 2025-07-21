@@ -5,7 +5,8 @@ const imageModules = import.meta.glob(
     '$lib/../backgrounds/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
     {
         eager: true,
-        as: 'url',
+        query: '?url',
+        import: 'default'
     }
 )
 </script>
