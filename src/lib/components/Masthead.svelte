@@ -5,13 +5,14 @@ const imageModules = import.meta.glob(
     '$lib/../backgrounds/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
     {
         eager: true,
-        query: '?url',
+        query: '?enhanced',
         import: 'default'
     }
-)
+) as Record<string, any>
 </script>
 
-<header class="masthead-wrapper" id="menu" style={ "background-image: url(" + imageModules['/src/backgrounds/bg-about.jpg'] + ")" }>
+<header class="masthead-wrapper" id="menu">
+    <enhanced:img src={ imageModules['/src/backgrounds/bg-about.jpg'] } alt="An alt text" />
     <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">
@@ -32,6 +33,17 @@ const imageModules = import.meta.glob(
     background-attachment: scroll;
     position: relative;
     background-size: cover;
+}
+
+.masthead-wrapper :global(picture) :global(img) {
+    position: absolute;
+    top : 0;
+    right : 0;
+    bottom: 0;
+    left: 0;
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
 }
 
 .overlay {
