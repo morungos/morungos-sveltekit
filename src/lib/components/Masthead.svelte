@@ -8,10 +8,10 @@ const imageModules = import.meta.glob(
         as: 'url',
     }
 )
-
 </script>
 
-<div class="masthead-wrapper" id="menu" style={ "background-image: url(" + imageModules['/src/backgrounds/bg-about.jpg'] + ")" }>
+<header class="masthead-wrapper" id="menu" style={ "background-image: url(" + imageModules['/src/backgrounds/bg-about.jpg'] + ")" }>
+    <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">
             <div class="pure-u-1">
@@ -21,13 +21,11 @@ const imageModules = import.meta.glob(
             </div>
         </div>
     </div>
-</div>
-
+</header>
 
 <style>
 .masthead-wrapper {
-    margin-bottom: 1em;
-    min-height: 8em;
+    margin-bottom: 50px;
     background: no-repeat center center;
     background-color: #868e96;
     background-attachment: scroll;
@@ -35,12 +33,25 @@ const imageModules = import.meta.glob(
     background-size: cover;
 }
 
-.masthead-wrapper h1 {
-    color: white;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5;
 }
 
 .masthead-heading {
     text-align: center;
     padding: 110px 0px 70px;
+    position: relative;
+    color: white;
+}
+
+.masthead-heading h1 {
+    font-size: 48px;
+    margin-top: 20px;
 }
 </style>

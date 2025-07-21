@@ -3,7 +3,7 @@
         <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2">
                 <div class="pure-menu">
-                    <a href="/" class="pure-menu-item pure-menu-link">Stuart Watt</a>
+                    <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
                     <button class="navbar-toggle" id="toggle" aria-label="Toggle menu">
                         <s class="bar"></s>
                         <s class="bar"></s>
@@ -29,17 +29,27 @@
 
 <style>
 .navbar-wrapper {
-    position: fixed;
-    z-index: 1;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: absolute;
+    z-index: 1030;
     width: 100%;
     top: 0;
-    margin-bottom: 1em;
+    left: 0;
+    right: 0;
     -webkit-font-smoothing: antialiased;
-    overflow: hidden;
     -webkit-transition: height 0.5s;
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     transition: height 0.5s;
+    background-color: white;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #0085A1;
+}
+.navbar-brand {
+    font-weight: 800;
+    color: #212529;
 }
 
 .navbar-body .pure-g {
