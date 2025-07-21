@@ -20,7 +20,7 @@ import Masthead from '$lib/components/Masthead.svelte';
 
 import '../app.css';
 	
-let { children, data } = $props();
+let { children } = $props();
 import { page } from '$app/state';
 </script>
 
