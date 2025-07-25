@@ -6,13 +6,16 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: [
-		vitePreprocess(), 
 		mdsvex(mdsvexConfig),
+		vitePreprocess(), 
 	],
 	kit: {
 		adapter: adapter({ 
 			strict: false 
-		})
+		}),
+		prerender: {
+			handleHttpError: 'warn'
+		}
 	},
 	extensions: ['.svelte', '.svx', '.md']
 };

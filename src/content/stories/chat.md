@@ -1,7 +1,6 @@
 ---
-layout: page
 title: 'Live chat components: Svelte, Vite, and TypeScript for the win'
-background: '/img/bg-about.jpg'
+description: template-sveltekit-md-docs provides an example of how markdown docs can be rendered by SvelteKit using `mdsvex`. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
 ---
 
 One of my more recent projects was a complete rebuild of a legacy live chat
@@ -27,11 +26,11 @@ previous implementation, which had been in [Vue 2](https://v2.vuejs.org), then a
 And this is what it looked like, on one of our test pages.
 
 <figure class="figure w-75">
-  <img class="img-fluid border" src="/img/pages/flow-regular-5.png" 
-       alt="Screenshot of chat component in use">
-    <figcaption class="figure-caption">
-    Screenshot of chat component in use
-    </figcaption>
+  <enhanced:img 
+    class="img-fluid border" src="/src/images/pages/flow-regular-5.png" 
+    alt="Screenshot of chat component in use"></enhanced:img>
+
+  <figcaption class="figure-caption">Screenshot of chat component in use</figcaption>
 </figure>
 
 ### Technologies used

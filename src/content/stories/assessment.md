@@ -1,5 +1,4 @@
 ---
-layout: page
 title: AI and technology for assessment in higher education
 background: '/img/bg-about.jpg'
 ---
