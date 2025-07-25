@@ -1,8 +1,8 @@
 ---
 title: template-svelte-kit-docs
-description: template-sveltekit-md-docs provides an example of how markdown docs can be rendered by SvelteKit using `mdsvex`. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
+description: template-sveltekit-md-docs provides an example of how markdown docs can be rendered by SvelteKit. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
 ---
-**template-sveltekit-md-docs** provides an example of how markdown docs can be rendered by SvelteKit using `mdsvex`. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
+**template-sveltekit-md-docs** provides an example of how markdown docs can be rendered by SvelteKit. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
 
 - Using Svelte 5
 - Markdown content is kept in `.md` files and dynamically rendered

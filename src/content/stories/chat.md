@@ -1,6 +1,6 @@
 ---
 title: 'Live chat components: Svelte, Vite, and TypeScript for the win'
-description: template-sveltekit-md-docs provides an example of how markdown docs can be rendered by SvelteKit using `mdsvex`. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
+description: template-sveltekit-md-docs provides an example of how markdown docs can be rendered by SvelteKit. Markdown content is supported as natively as possible, this allows compatibility with other markdown editors/renders (ex. github, obsidian).
 ---
 
 One of my more recent projects was a complete rebuild of a legacy live chat
