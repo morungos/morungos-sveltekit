@@ -22,7 +22,7 @@ research and development teams. He particularly enjoys empowering a team with
 new skills. His breadth of technical expertise ranges from artificial
 intelligence to the web, from databases to interfaces, from embedded systems to
 browser extensions, using tools ranging from JavaScript to Java, from Python to
-C, and from R to assembler. 
+C, and from R to assembler.
 
 * [See work on Github](https://github.com/morungos)
 * [See publications on Google Scholar](https://scholar.google.com/citations?user=WDMjFKEAAAAJ&hl=en)
@@ -35,25 +35,25 @@ Over 30 years experience developing and consulting across a wide range of
 business sectors, from telecommunications to energy, from finance to the
 creative arts, and from technology services to education.
 
-**Application types**
+### Application types
 
-- Web application design and development -- front and back end; artificial
+* Web application design and development -- front and back end; artificial
   intelligence and machine learning; real-time and embedded systems; information
   retrieval and natural language processing
 
-**Technologies**
+### Technologies*
 
-- Front end: JavaScript/TypeScript, React, Svelte, Vue, Angular, HTML, CSS
-- Server-side: Node.js, Express, Laravel/PHP, ASP/JSP, Spring, Restlets
-- Coding: JavaScript/TypeScript, C/C++, Java, Scala, C#, PHP, Python, Elixir, Perl, Common Lisp
-- Native UX and apps: Visual Basic/C#, React Native, NativeScript,
+* Front end: JavaScript/TypeScript, React, Svelte, Vue, Angular, HTML, CSS
+* Server-side: Node.js, Express, Laravel/PHP, ASP/JSP, Spring, Restlets
+* Coding: JavaScript/TypeScript, C/C++, Java, Scala, C#, PHP, Python, Elixir, Perl, Common Lisp
+* Native UX and apps: Visual Basic/C#, React Native, NativeScript,
   Ionic/Capacitor/Cordova
-- Testing: Jest, Vitest, CUnit, JUnit, etc., Puppeteer
-- Databases: MySQL/MariaDB, PostgreSQL, MS SQL, MongoDB, Redis, SQLite
-- Infrastructure: Github Actions, cloud services, continuous
+* Testing: Jest, Vitest, CUnit, JUnit, etc., Puppeteer
+* Databases: MySQL/MariaDB, PostgreSQL, MS SQL, MongoDB, Redis, SQLite
+* Infrastructure: Github Actions, cloud services, continuous
   integration, Ansible, Linux administration
-- Embedded: basic circuit design and building, microcontrollers
-- Statistics: R, SPSS
-- Networking and security: socket-level programming, firewalls, routers, nginx
+* Embedded: basic circuit design and building, microcontrollers
+* Statistics: R, SPSS
+* Networking and security: socket-level programming, firewalls, routers, nginx
   hardening, intrusion detection
-- Expertise coding for: MQTT, ONNX, ffmpeg and gstreamer, OpenCV
+* Expertise coding for: MQTT, ONNX, ffmpeg and gstreamer, OpenCV
