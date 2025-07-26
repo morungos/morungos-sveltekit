@@ -436,6 +436,3 @@ clean as it might be.
   (unpacked and deployed to `/usr/local`), rather than a Debian-provided
   one, to ensure that the deployed version was stable.
 
-## Notes
-
-* footnotes will be placed here. This line is necessary

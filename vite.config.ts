@@ -2,6 +2,7 @@ import { enhancedImages } from "@sveltejs/enhanced-img";
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import svelteMd from "vite-plugin-svelte-md";
+import mdFootnotes from 'markdown-it-footnote'
 
 function stripEmptyScripts() {
 	return {
@@ -17,7 +18,9 @@ function stripEmptyScripts() {
 
 export default defineConfig({
 	plugins: [
-		svelteMd(),
+		svelteMd({
+			markdownItUses: [mdFootnotes]
+		}),
 		enhancedImages(),
 		stripEmptyScripts(),
 		sveltekit(),
