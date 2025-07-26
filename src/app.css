@@ -98,3 +98,16 @@ hr.separator {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+.figure img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: 600;
+}

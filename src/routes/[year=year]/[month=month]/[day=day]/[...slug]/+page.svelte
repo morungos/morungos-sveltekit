@@ -10,12 +10,12 @@ let { data }: Props = $props();
 </script>
 
 <svelte:head
-	><title>{data.post.fields.title}</title><meta
+	><title>{data.frontmatter.title}</title><meta
 		name="description"
-		content={data.post.fields.description}
+		content={data.frontmatter.description}
 	/>
 </svelte:head>
 
 <article>
-	{@html data.content}
+	<data.component></data.component>
 </article>

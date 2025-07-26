@@ -2,13 +2,6 @@
 layout: post
 title: 'Stuart’s guide to high-availability services on a budget'
 author: Stuart
-background: '/img/posts/slidey0136.jpg'
-summary: >-
-  Do you need to put together a high-availability application platform on 
-  a budget? This post is for you
-image: '/img/posts/slidey0136.jpg'
-image_description: |-
-  Quiraing, on the Isle of Skye, with mists in the foreground, and a little wisp of cloud above
 ---
 
 One of the challenges of cloud hosting is keeping the costs down. There are just
@@ -118,8 +111,8 @@ have built our own load balancer, but Digital Ocean's cost the same as two nodes
 anyway, so it would not have saved us all that much.
 
 <figure class="figure w-75">
-  <img class="img-fluid" src="/img/posts/cluster-architecture.png" 
-       alt="Chart of bias effects by temperature">
+  <enhanced:img class="img-fluid" src="/src/images/posts/cluster-architecture.png" 
+       alt="Chart of bias effects by temperature"></enhanced:img>
     <figcaption class="figure-caption">
     Overview of the basic cluster architecture.
     </figcaption>
@@ -446,4 +439,3 @@ clean as it might be.
 ## Notes
 
 * footnotes will be placed here. This line is necessary
-{:footnotes}

@@ -3,10 +3,23 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import svelteMd from "vite-plugin-svelte-md";
 
+function stripEmptyScripts() {
+	return {
+    	name: 'strip-empty-scripts',
+		transform: {
+			order: 'pre', // puts it before vite-plugin-svelte:compile
+			async handler(content: string, filename: string) {
+				return content.replaceAll(/^<script>\s*<\/script>\s*/g, "");
+			}
+		}
+    }
+} 
+
 export default defineConfig({
 	plugins: [
 		svelteMd(),
 		enhancedImages(),
+		stripEmptyScripts(),
 		sveltekit(),
 	],
 	test: {
