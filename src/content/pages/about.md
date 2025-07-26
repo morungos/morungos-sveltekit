@@ -1,5 +1,4 @@
 ---
-layoutzz: page
 title: About Stuart
 background: '/img/bg-about.jpg'
 description: >-
