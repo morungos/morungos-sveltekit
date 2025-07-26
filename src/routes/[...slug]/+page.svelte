@@ -2,16 +2,14 @@
 import '$lib/content-styles.css';
 import type { PageData } from './$types.js';
 
-import Showdown from 'showdown';
+export const prerender = true;
+export const ssr = true;
 
 interface Props {
     data: PageData;
 }
 
 let { data }: Props = $props();
-
-const converter = new Showdown.Converter();
-const postContentHTML = converter.makeHtml(data.post.content);
 </script>
 
 <svelte:head
@@ -22,5 +20,5 @@ const postContentHTML = converter.makeHtml(data.post.content);
 </svelte:head>
 
 <article>
-	{@html postContentHTML}
+	{@html data.content}
 </article>

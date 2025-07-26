@@ -3,20 +3,25 @@ import { pathToSlug, slugToPath } from "$lib/utils.js";
 import { error } from "@sveltejs/kit";
 import type { EntryGenerator, PageServerLoad } from "./$types";
 import FusionCollection from 'fusionable/FusionCollection';
+import Showdown from 'showdown';
 
-export const prerender = "auto";
-export const ssr = true;
+const converter = new Showdown.Converter();
 
 export const load = (async ({ params }) => {
 	const collection = new FusionCollection().loadFromDir('src/content', true);
 	const path = slugToPath(params.slug)
 	const post = collection.getOneByFilename(path);
 
+	console.log("path", path, post)
+
 	if (!post) {
 		throw new Error('Post not found');
 	}
 
-	return { post: post.getItem() };
+	return { 
+		post: post.getItem(),
+		content: converter.makeHtml(post.getItem().content)
+	};
 
 }) satisfies PageServerLoad;
 
