@@ -1,7 +1,7 @@
+import { pathToBlogParams, blogParamsToPath } from "$lib/utils.js";
 import type { EntryGenerator, PageServerLoad } from "./$types";
+import FusionCollection from 'fusionable/FusionCollection';
 import Showdown from 'showdown';
-
-import { collection, getItemByFilename, slugToPath, pathToSlug } from '$lib/collections/pages.js'
 
 const converter = new Showdown.Converter();
 
@@ -9,14 +9,14 @@ export const prerender = true;
 export const ssr = true;
 
 export const load = (async ({ params }) => {
-	const path = slugToPath(params.slug)
+	const collection = new FusionCollection().loadFromDir('src/content/posts', true);
+	const path = blogParamsToPath(params.year, params.month, params.day, params.slug);
+	console.log("blog slug", params, path)
 
-	const post = getItemByFilename(path);
-
+	const post = collection.getOneByFilename(path);
 
 	if (!post) {
-		console.log(collection)
-		throw new Error('Page not found');
+		throw new Error('Post not found');
 	}
 
 	return { 
@@ -27,6 +27,9 @@ export const load = (async ({ params }) => {
 }) satisfies PageServerLoad;
 
 export const entries: EntryGenerator = async () => {
+	const collection = new FusionCollection()
+		.loadFromDir('src/content/posts', true);
+
 	const posts = collection.getItemsArray();
 	return posts.map((path) => {
 		return { slug: pathToSlug(path) };
