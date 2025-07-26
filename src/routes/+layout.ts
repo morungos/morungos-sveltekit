@@ -3,7 +3,7 @@ import { pathToSlug } from "$lib/utils";
 import type { LayoutLoad } from "./$types";
 
 export const trailingSlash = 'always';
-export const prerender = "auto";
+export const prerender = true;
 export const ssr = true;
 
 export const load = (async () => {
