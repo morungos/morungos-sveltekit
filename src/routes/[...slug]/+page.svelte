@@ -2,20 +2,25 @@
 import '$lib/content-styles.css';
 import type { PageData } from './$types.js';
 
+import Showdown from 'showdown';
+
 interface Props {
     data: PageData;
 }
 
 let { data }: Props = $props();
+
+const converter = new Showdown.Converter();
+const postContentHTML = converter.makeHtml(data.post.content);
 </script>
 
 <svelte:head
-	><title>{data.metadata.title}</title><meta
+	><title>{data.post.fields.title}</title><meta
 		name="description"
-		content={data.metadata.description}
+		content={data.post.fields.description}
 	/>
 </svelte:head>
 
 <article>
-	<data.component></data.component>
+	{@html postContentHTML}
 </article>
