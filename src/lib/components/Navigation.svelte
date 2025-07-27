@@ -15,9 +15,9 @@
                     <ul class="pure-menu-list">
                         <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
                         <li class="pure-menu-item"><a href="/about/" class="pure-menu-link">About</a></li>
+                        <li class="pure-menu-item"><a href="/posts/" class="pure-menu-link">Posts</a></li>
                         <li class="pure-menu-item"><a href="/contact/" class="pure-menu-link">Contact</a></li>
                         <!-- 
-                        <li class="pure-menu-item"><a href="/posts.html" class="pure-menu-link">Posts</a></li>
                         <li class="pure-menu-item"><a href="/gallery.html" class="pure-menu-link">Gallery</a></li>
                         -->
                     </ul>
