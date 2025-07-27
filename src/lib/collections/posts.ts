@@ -27,3 +27,11 @@ export function pathToParams(path: string): CollectionParams | null {
 export async function getModules(): Promise<ContentModules> {
     return modules;
 }
+
+export async function getModulePage(pageNumber: number, pageSize: number = 5): Promise<ContentModules> {
+    const sorted = Object.entries(modules).sort((a, b) => b[0].localeCompare(a[0]))
+    const start = pageNumber * pageSize
+    const subset = sorted.slice(start, start + pageSize)
+
+    return Object.fromEntries(subset)
+}

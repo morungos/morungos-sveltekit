@@ -1,3 +1,13 @@
+<script lang="ts">
+import type { PageData } from "./$types";
+
+interface Props {
+    data: PageData;
+}
+
+let { data }: Props = $props();
+</script>
+
 <p>
 Hi, <a href="/about/">I'm Stuart</a>, and welcome. I'm a developer with an extra: a background
 in the cognitive and social sciences. I love to create products and solutions that 
@@ -22,3 +32,14 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 <hr class="separator">
 
 <h2>Latest posts</h2>
+
+{#snippet postBlock(post)}
+<h3>{ post.frontmatter.title }</h3>
+<p>
+    Posted by Stuart on July 06, 2025 · 5 mins read
+</p>
+{/snippet}
+
+{#each data.posts as post}
+{@render postBlock(post)}
+{/each}
