@@ -1,6 +1,13 @@
 import MagicString from 'magic-string';
 import type { PluginOption } from 'vite';
 
+/**
+ * A small Vite plugin that removes completely empty script elements
+ * when they are at the start of a Markdown file. It should be harmless
+ * anyway, but stops the Vite Svelte markdown plugin from messing up
+ * front matter.
+ */
+
 export function stripEmptyScripts() {
 	return {
     	name: 'strip-empty-scripts',
