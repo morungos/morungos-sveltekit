@@ -24,6 +24,15 @@ export function pathToParams(path: string): CollectionParams | null {
     return null;
 }
 
+export function pathToURL(path: string): string | null {
+    const params: CollectionParams | null = pathToParams(path);
+    if (params) {
+        return `/${params.year}/${params.month}/${params.day}/${params.slug}/`
+    } else {
+        return null;
+    }
+}
+
 export async function getModules(): Promise<ContentModules> {
     return modules;
 }
