@@ -310,11 +310,6 @@ need to preserve our rights to benefit from our labour.
     removed will not, I hope, be lost on anyone.
 
 
-## Notes
-
-* footnotes will be placed here. This line is necessary
-{:footnotes}
-
 # References
 
 Beck, U. (1992). *Risk Society: Towards a new modernity*. SAGE Publications.

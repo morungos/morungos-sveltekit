@@ -83,11 +83,10 @@ represented in the training data. In fact, well over half of the quotes in the
 data match one or more of these rhetorical forms. Although almost any rhetorical
 figure can be used for impact, the various forms of repetition, including
 anaphora, antimetabole, diacope, epistrophe, and epizeuxis, these are all used
-most extensively. Metaphor and simile are also common, as is alliteration. 
-
+most extensively. Metaphor and simile are also common, as is alliteration.
 
 | Device          | Description         | Example quote            |
-|---------------- | ------------------- | ------------------- | 
+|---------------- | ------------------- | ------------------- |
 | Alliteration    | Repeating initial sounds in adjacent words | "Every calm and quiet place is the true temple of the wise man" |
 | Anacoluthon     | Changing syntax mid-sentence               | "Eternity is a terrible thought -- I mean, where's it going to end?" |
 | Anadiplosis     | Repeating a key word at the end and start of a new clause | "Inner peace can be reached only when we practice forgiveness -- forgiveness is letting go of the past" |
@@ -110,7 +109,6 @@ most extensively. Metaphor and simile are also common, as is alliteration.
 | Oxymoron | Combining that usually don't make sense together | "Bitter wisdom is better than sweet folly" |
 | Paradiastole | Reframing a vice as a virtue | "Do not be afraid to fail -- most do every day" |
 | Simile | Comparing two unlike things, typically using "like" or "as" |  "A conscience is like a baby -- it has to go to sleep before you can" |
-{:.w-100.table.table-striped}
 
 **Table 1. Some of the more common rhetorical figures found in inspirational quotes**
 
@@ -309,11 +307,6 @@ And this is why rhetoric is interesting. It is not a lens that we are
 seeing used with Open AI, Google, and other large language models. But, given
 that the point of rhetoric is to persuade, perhaps more attention should be
 paid to this fascinating aspect of human language.
-
-## Notes
-
-* footnotes will be placed here. This line is necessary
-{:footnotes}
 
 ## References
 

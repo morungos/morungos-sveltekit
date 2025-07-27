@@ -9,8 +9,9 @@ interface Props {
 let { data }: Props = $props();
 </script>
 
-<svelte:head
-	><title>{data.frontmatter.title}</title><meta
+<svelte:head>
+	<title>{data.frontmatter.title}</title>
+	<meta
 		name="description"
 		content={data.frontmatter.description}
 	/>

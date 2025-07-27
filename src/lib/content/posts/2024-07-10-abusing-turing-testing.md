@@ -278,11 +278,6 @@ what might be going on inside the system, trying to build theories and understan
 of them, and even making human judgements about the quality of what they do. Only then
 will we be respecting the spirit of Turing's original concept.
 
-## Notes
-
-* footnotes will be placed here. This line is necessary
-{:footnotes}
-
 ## References
 
 [Ashby, W. Ross (1957). *Principles of cybernetics*. London: Chapman & Hall.](http://pespmc1.vub.ac.be/books/IntroCyb.pdf)

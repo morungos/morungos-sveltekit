@@ -73,10 +73,8 @@ for example, or the creation of collaborative networks.
 | Attitude of confidence, belief | Attitude of skepticism, questioning |
 | Consequentialist ethics | Virtue ethics |
 | Guided by theory | Guided by experiment |
-{:.w-100}
 
 **Table 1. Characteristics of Big Science and Little Science**
-{:.text-muted.}
 
 Harry Collins (2003) uses a richer typology, distinguishing "centralized big science"
 from "federal big science", with an overlapping mixed category showing aspects of both.
@@ -238,7 +236,6 @@ So let me tell this as a story about the transformation of artificial intelligen
 > artificial intelligence, *enabled* a Big Science version of artificial intelligence to get 
 > under way. The AI winter was a crisis and GOFAI 
 > was replaced in a *revolutionary* paradigm shift to machine learning.
-{: #story1 }
 
 But let's look at Story 1 in detail. First off, there's a problem with the
 timeline. The second AI Winter peaked around 1990, but the paradigm 
@@ -325,7 +322,6 @@ So let's revise our story.
 > [CommonKADS](https://commonkads.org/). Over time, machine learning techniques, 
 > particularly those that assisted knowledge acquisition, became an established part of
 > those evolved research traditions, and GOFAI simply faded out.
-{: #story2 }
 
 There are points when abandoning a technique is *rational*, i.e., when -- given the
 available technology -- other techniques perform better. i.e., the exact same technique 
@@ -442,7 +438,6 @@ So let's see if we can use this to improve our explanation.
 > the mid 2010s, there was proof of viability via AlexNet, proof of need in
 > recommender system usage in Amazon etc., and a step change in compute economics -- enough
 > to create conditions for a Big Science scale investment.
-{: #story3 }
 
 The first observation about this story is that the "crisis" and the "paradigm shift"
 are decoupled, allowing us to account for the twenty year gap between the two. In fact,
@@ -761,14 +756,12 @@ Machine learning folks need to build tight collaborations with people in other f
 preserving their identity and innovation as a field in their own right. Until they do become a 
 transdiscipline, this XKCD will continue to apply.
 
-{::options parse_block_html="true" /}
 <figure>
-![Here to Help, by XKCD](https://imgs.xkcd.com/comics/here_to_help.png){:.mw-100}
+![Here to Help, by XKCD](https://imgs.xkcd.com/comics/here_to_help.png)
 <figcaption>
 [Here to Help, by XKCD](https://xkcd.com/1831/)
 </figcaption>
 </figure>
-{::options parse_block_html="false" /}
 
 **Thing Four: stop worrying about AI winters**. We need to stop thinking about machine
 learning as a Kuhnian paradigm shift from GOFAI. It's a set of methods -- a very powerful set of
@@ -810,11 +803,6 @@ _[If you choose to support me through @buymeacoffee, I'd be both grateful and mo
 _**Disclosure**: I've worked on several Big Science projects, including the 
 [International Cancer Genome Project](https://dcc.icgc.org/) and 
 [AACR Project Genie](https://www.aacr.org/professionals/research/aacr-project-genie/)._
-
-## Notes
-
-* footnotes will be placed here. This line is necessary
-{:footnotes}
 
 ## References
 
