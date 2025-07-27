@@ -33,7 +33,7 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 
 <h2>Latest posts</h2>
 
-{#snippet postBlock(post)}
+{#each data.posts as post}
 {#if post.url}
 <a href={post.url}><h3>{ post.frontmatter.title }</h3></a>
 {:else}
@@ -42,8 +42,4 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 <p>
     Posted by Stuart on July 06, 2025 · 5 mins read
 </p>
-{/snippet}
-
-{#each data.posts as post}
-{@render postBlock(post)}
 {/each}

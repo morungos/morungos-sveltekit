@@ -11,6 +11,9 @@ export default defineConfig({
 	plugins: [
 		svelteMd({
 			headId: 'id',
+			markdownItOptions: {
+				typographer: true
+			},
 			markdownItUses: [mdFootnotes, mdAnchors]
 		}) as PluginOption,
 		enhancedImages(),
