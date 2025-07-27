@@ -12,6 +12,7 @@ excerpt: |-
 image: '/img/posts/IMG_6794.jpeg'
 image_description: "Cascade on the River Etherow"
 ---
+<svelte:head><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></svelte:head>
 
 One of the more intriguing aspects of the current discussions about
 the existential risks of artificial intelligence has been watching
@@ -93,9 +94,8 @@ more immediate risks, as more worthy of attention as well as regulation.
 
 You can see these positive and negative reputational dynamics in, for example, the following tweets.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’ve released a statement on the risk of extinction from AI.<br><br>Signatories include:<br>- Three Turing Award winners<br>- Authors of the standard textbooks on AI/DL/RL<br>- CEOs and Execs from OpenAI, Microsoft, Google, Google DeepMind, Anthropic<br>- Many more<a href="https://t.co/mkJWhCRVwB">https://t.co/mkJWhCRVwB</a></p>&mdash; Center for AI Safety (@ai_risks) <a href="https://twitter.com/ai_risks/status/1663478064913993728?ref_src=twsrc%5Etfw">May 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Why can&#39;t both be existential risks? Furthermore, how are you so confident that AI is not an existential risk when Hinton and Bengio disagree with you?</p>&mdash; Peter Berggren (@berggrenpeterm) <a href="https://twitter.com/berggrenpeterm/status/1667381395977809920?ref_src=twsrc%5Etfw">June 10, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We’ve released a statement on the risk of extinction from AI.<br><br>Signatories include:<br>- Three Turing Award winners<br>- Authors of the standard textbooks on AI/DL/RL<br>- CEOs and Execs from OpenAI, Microsoft, Google, Google DeepMind, Anthropic<br>- Many more<a href="https://t.co/mkJWhCRVwB">https://t.co/mkJWhCRVwB</a></p>&mdash; Center for AI Safety (@ai_risks) <a href="https://twitter.com/ai_risks/status/1663478064913993728?ref_src=twsrc%5Etfw">May 30, 2023</a></blockquote> 
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Why can&#39;t both be existential risks? Furthermore, how are you so confident that AI is not an existential risk when Hinton and Bengio disagree with you?</p>&mdash; Peter Berggren (@berggrenpeterm) <a href="https://twitter.com/berggrenpeterm/status/1667381395977809920?ref_src=twsrc%5Etfw">June 10, 2023</a></blockquote>
 
 This is the basic social process behind an availability cascade. But
 why are they a problem? As Kuran & Sunstein argue, while sometimes they

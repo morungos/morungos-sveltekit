@@ -11,6 +11,8 @@ excerpt: |-
 image: '/img/posts/monopoly-2636268_1920.jpg'
 image_description: "A Canadian monopoly set, with dice and cards"
 ---
+<svelte:head><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></svelte:head>
+
 There's a lot of talk about artificial intelligence and existential risk. 
 
 Ultimately, the problem with AGI's version of existential risk is it 
@@ -25,11 +27,11 @@ How anybody can claim with a straight face that the probability of an event that
 has never happened, and where there is no theory of how it can happen, is *p* = 1.0, I do not 
 know. And yet they do. 😐
 
-<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I strongly predict that superintelligence (built on anything remotely resembling current paradigms) kills us (on the first flailing attempt and then we don&#39;t get a second). I am far less sure about whether or not scaling up GPT-like things will get us to superintelligence.</p>&mdash; Eliezer Yudkowsky (@ESYudkowsky) <a href="https://twitter.com/ESYudkowsky/status/1660625946142187521?ref_src=twsrc%5Etfw">May 22, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I strongly predict that superintelligence (built on anything remotely resembling current paradigms) kills us (on the first flailing attempt and then we don&#39;t get a second). I am far less sure about whether or not scaling up GPT-like things will get us to superintelligence.</p>&mdash; Eliezer Yudkowsky (@ESYudkowsky) <a href="https://twitter.com/ESYudkowsky/status/1660625946142187521?ref_src=twsrc%5Etfw">May 22, 2023</a></blockquote>
 
 OK, sure, randomly choose *p* = 0.03 instead, why not?
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">AGI risk is not like &quot;a million people will be killed by a pandemic within a year with 80% probability&quot;, but more like &quot;all people may be killed within 100 years with 3% probability&quot;. Which do you think is worse?</p>&mdash; Joscha Bach (@Plinz) <a href="https://twitter.com/Plinz/status/1580777415516688384?ref_src=twsrc%5Etfw">October 14, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">AGI risk is not like &quot;a million people will be killed by a pandemic within a year with 80% probability&quot;, but more like &quot;all people may be killed within 100 years with 3% probability&quot;. Which do you think is worse?</p>&mdash; Joscha Bach (@Plinz) <a href="https://twitter.com/Plinz/status/1580777415516688384?ref_src=twsrc%5Etfw">October 14, 2022</a></blockquote>
 
 This is not a risk calculus -- it's an *instrumental* calculus -- people are choosing the numbers that 
 add up to the point they want to make. It's all an illusion.

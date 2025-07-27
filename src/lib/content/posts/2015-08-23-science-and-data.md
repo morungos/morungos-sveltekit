@@ -7,12 +7,12 @@ summary: >-
   A short story about the distinction between cherry-picking data and
   removing bad data
 ---
+<svelte:head><script async src="//platform.twitter.com/widgets.js"></script></svelte:head>
 
 Science is having an interesting time of it recently, as it comes under
 increasing intelligent scrutiny.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">My months-long obsession. Science isn&#39;t broken. It&#39;s just really fucking hard. <a href="http://t.co/WljU0ffJJz">http://t.co/WljU0ffJJz</a> w/<a href="https://twitter.com/RitchieSKing">@RitchieSKing</a> <a href="http://t.co/GmHmnE5sEj">pic.twitter.com/GmHmnE5sEj</a></p>&mdash; Christie Aschwanden (@cragcrest) <a href="https://twitter.com/cragcrest/status/633990626099392512">August 19, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 So I'll tell this brief story. I was running a timed-response experiment. It was
 a fairly simple experiment, which looked at how people read email. The

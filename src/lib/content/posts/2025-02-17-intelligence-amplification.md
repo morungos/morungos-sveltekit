@@ -11,6 +11,7 @@ image: '/img/posts/kearney-lake.jpg'
 image_description: |-
   A small forested lake, surrounded by scrubland.
 ---
+<svelte:head><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script></svelte:head>
 
 Sometimes, people who had shown a glimmering of understanding, manage to
 demonstrate that they too do not get it. Today's example is from Sharknado III's
@@ -18,7 +19,7 @@ President himself, Mark Cuban.
 
 <blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:y5xyloyy7s4a2bwfeimj7r3b/app.bsky.feed.post/3lifd5rbnkk2k" data-bluesky-cid="bafyreifrhil5cljvrehmuemxujophwn55pl5ou5qa5wgwjkghis33h7gca" data-bluesky-embed-color-mode="system"><p lang="en">If you have zero education, but learn how to ask AI models the right questions , in many jobs you will be able to outperform someone with an advanced degree, but who is unwilling to use Large Language Models.<br>
 <br>
-Just takes a smartphone, curiosity to experiment and a mindset to learn.</p>&mdash; Mark Cuban (<a href="https://bsky.app/profile/did:plc:y5xyloyy7s4a2bwfeimj7r3b?ref_src=embed">@mcuban.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:y5xyloyy7s4a2bwfeimj7r3b/post/3lifd5rbnkk2k?ref_src=embed">17 February 2025 at 13:59</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
+Just takes a smartphone, curiosity to experiment and a mindset to learn.</p>&mdash; Mark Cuban (<a href="https://bsky.app/profile/did:plc:y5xyloyy7s4a2bwfeimj7r3b?ref_src=embed">@mcuban.bsky.social</a>) <a href="https://bsky.app/profile/did:plc:y5xyloyy7s4a2bwfeimj7r3b/post/3lifd5rbnkk2k?ref_src=embed">17 February 2025 at 13:59</a></blockquote>
 
 [Frederick Brooks, in 1996, wrote a wonderful and thoughtful
 article](https://www.cs.unc.edu/~brooks/Toolsmith-CACM.pdf)[^Brooks] on the framing of

@@ -5,11 +5,11 @@ author: Stuart
 summary: >-
   Stack ranking is basically evil -- don't do it
 ---
+<svelte:head><script async src="//platform.twitter.com/widgets.js"></script></svelte:head>
 
 A friend of mine tweeted this today.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Stack ranking is the tool of the devil. <a href="https://t.co/1idY30WSAY">https://t.co/1idY30WSAY</a></p>&mdash; Alex Beamish (@talexb) <a href="https://twitter.com/talexb/status/632899294115311616">August 16, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 And I have to agree on the basic sentiment. The idea of software that "promises to turn the annual performance
 review into a daily event" is enough to strike fear into the average -- and even the exceptional --

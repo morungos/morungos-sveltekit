@@ -11,6 +11,7 @@ image: '/img/posts/punch-and-policeman.jpg'
 image_description: "Mr Punch and the Policeman from Daniel Hanton's Punch and Judy show"
 excerpt_separator: "<!-- more -->"
 ---
+<svelte:head><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></svelte:head>
 
 Artificial intelligence has a power problem. Look at the modern trends to:
 
@@ -34,7 +35,6 @@ educational technology:
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">
   My rule has always been: ed tech needs to be like comedy — always punch up, never punch down. Empower those without power, or you’re doing it wrong.</p>&mdash; Stuart Watt (@morungos) <a href="https://twitter.com/morungos/status/1372709992919400450?ref_src=twsrc%5Etfw">March 19, 2021</a>
 </blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Comedy can break this rule. [The trickster](https://www.thecanadianencyclopedia.ca/en/article/trickster) can
 confront and ignore social rules, and that's [a large part of what keeps society

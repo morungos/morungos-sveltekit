@@ -229,7 +229,9 @@ deciding whether or not there is a crisis in the first place.
 
 So let me tell this as a story about the transformation of artificial intelligence into a Big Science.
 
-> **Story 1**. After about three decades of research, Good Old Fashioned AI entered  
+> #### Story 1
+> 
+> After about three decades of research, Good Old Fashioned AI entered  
 > a crisis over the effort involved in building systems. It was simply too expensive to manage the 
 > knowledge. This required a Kuhnian paradigm shift. That shift was towards by a machine-learning-based
 > approach, which overcame the knowledge problem. The new, machine learning paradigm for 
@@ -310,7 +312,9 @@ learning techniques.
 
 So let's revise our story.
 
-> **Story 2**. After about three decades of research, the scientific community centred around one 
+> #### Story 2
+> 
+> After about three decades of research, the scientific community centred around one 
 > research tradition, Good Old Fashioned AI hit a problem. The effort involved in building 
 > systems was becoming uneconomic. It was simply too expensive to manage the knowledge. 
 > One of its foundational assumptions, that it was economically viable to capture
@@ -422,7 +426,9 @@ because *people* move between research traditions.
 
 So let's see if we can use this to improve our explanation.
 
-> **Story 3**. After about three decades of research, the scientific community centred around one 
+> #### Story 3
+> 
+> After about three decades of research, the scientific community centred around one 
 > research tradition, GOFAI expert systems hit a problem. The effort involved in building 
 > systems was becoming uneconomic. It was simply too expensive to manage the knowledge. 
 > One of its foundational assumptions, that it was economically viable to capture
@@ -525,7 +531,7 @@ In many ways, it is better to use
 as a method for building mental constructs, i.e., *learning*. Learning
 happens through bricolage, and whether it is creating new concepts and 
 methods in science, or new concepts and methods in a child's mind, the
-process is virtually the same. For example, if we revisit the later parts of [Story 3](#story3) through
+process is virtually the same. For example, if we revisit the later parts of [Story 3](#story-3) through
 the lens of bricolage, the "do it yourself" assembly and re-purposing of 
 tools and ideas is extremely clear.
 
@@ -706,8 +712,8 @@ the consequence of the Big Science institutional pattern 'freezing' existing res
 and inhibiting the creation and evolution of new ones that compete with them. 
 
 We need to accept that multiple scientific communities with multiple 
-research traditions is a Good Thing -- this is why, for me at least [Story 3](#story3)
-has a plausibility that [Story 1](#story1) and [Story 2](#story2) do not. 
+research traditions is a Good Thing -- this is why, for me at least [Story 3](#story-3)
+has a plausibility that [Story 1](#story-1) and [Story 2](#story-2) do not. 
 We need to fund work other than deep learning, other than neural networks, 
 and even -- shock! -- other than machine learning -- if we are to build a strong and vibrant field,
 robust from hype cycles.
@@ -771,7 +777,7 @@ it explicitly regards all past artificial intelligence work as, essentially, jun
 [(see, for example, the way Goldstein put it)](https://twitter.com/tomgoldsteincs/status/1484609313947725827?s=20&t=1457k-3uJN40-46gjHR7rA).
 This is both false and socially corrosive. It is good to be conscious of hype cycles,
 and we need to be far more critical of the way Big Science feeds them. When we look
-in more detail, as in [Story 3](#story3), we see smaller communities exchanging ideas
+in more detail, as in [Story 3](#story-3), we see smaller communities exchanging ideas
 and methods in a more dynamic way. 
 
 I am sure Big Science is here to stay. It is too deeply intertwined with

@@ -5,15 +5,15 @@ summary: >-
   In which I commit sociology on identity in science.
 ---
 
+<svelte:head><script async src="//platform.twitter.com/widgets.js"></script></svelte:head>
+
 Morgan Taschuk's posting ["Biologists and bioinformaticians have different software needs"](https://modernmodelorganism.wordpress.com/2015/07/19/biologists-and-bioinformaticians-have-different-software-needs/) makes for an interesting read, but it's drawn a fascinating amount of strongly felt responses.
 
 However, big caveat: it's not fair to put this at Morgan's door, she was reporting BOSC, and others were raising it there:
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I can tell you now, most biologists won&#39;t have time to think abt Docker, Agave, APIs, etc, when thinking about how to publish data <a href="https://twitter.com/hashtag/BOSC2015?src=hash">#BOSC2015</a></p>&mdash; Holly Bik (@hollybik) <a href="https://twitter.com/hollybik/status/619822732096745472">July 11, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/kaiblin">@kaiblin</a> I really dislike implication that bioinformaticians are not biologists. It is not right. <a href="https://twitter.com/hashtag/bosc2015?src=hash">#bosc2015</a></p>&mdash; Michael Hoffman (@michaelhoffman) <a href="https://twitter.com/michaelhoffman/status/619444403808169984">July 10, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 So why this "kerfuffle"?
 
