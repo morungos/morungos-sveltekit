@@ -1,27 +1,21 @@
 import type { ContentModules } from "$lib/types";
 import { error } from "@sveltejs/kit";
 import type { EntryGenerator, PageLoad } from "./$types";
-import { paramsToPath } from "$lib/collections/posts";
-
-import { modules } from '$lib/collections/posts';
+import { getModules, paramsToPath, pathToParams } from "$lib/collections/posts";
 
 export const prerender = true;
 export const ssr = true;
 
 export const load = (async ({ params }) => {
 	const path = paramsToPath(params.year, params.month, params.day, params.slug);
-	console.log("search", modules, path)
+	const modules = await getModules();
 	const contentModule = modules[path];
 
 	if (!contentModule) {
 		error(404, "Can't find content");
 	}
 
-	console.log("CM", path, await contentModule().then())
-
 	const { default: component, frontmatter } = await contentModule().then();
-
-	console.log("fm", frontmatter)
 
 	return { 
         component, 
@@ -31,11 +25,11 @@ export const load = (async ({ params }) => {
 }) satisfies PageLoad;
 
 export const entries: EntryGenerator = async () => {
-	const modules = import.meta.glob("/src/content/**/*.md") as ContentModules;
+	const modules = await getModules()
 
 	const entries = Object.keys(modules).map((path) => {
-		return { slug: pathToSlug(path) };
-	});
+		return pathToParams(path);
+	}).filter((v) => !!v);
 
 	return entries;
 };

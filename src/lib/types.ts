@@ -1,11 +1,12 @@
 import type { Component } from 'svelte';
 
-export type ContentFrontmatter = {
-	title: string;
-	description: string;
+export type ContentFrontMatter = {
+	id: string,
+	title?: string;
+	description?: string;
 };
 
 export type ContentModules = Record<
 	string,
-	() => Promise<{ default: Component; frontmatter: ContentFrontmatter }>
+	() => Promise<{ default: Component; frontmatter: ContentFrontMatter }>
 >;

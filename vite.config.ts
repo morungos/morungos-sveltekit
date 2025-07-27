@@ -2,7 +2,9 @@ import { enhancedImages } from "@sveltejs/enhanced-img";
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import svelteMd from "vite-plugin-svelte-md";
-import mdFootnotes from 'markdown-it-footnote'
+import mdFootnotes from 'markdown-it-footnote';
+import mdAnchors from 'markdown-it-anchor';
+import MagicString from 'magic-string';
 
 function stripEmptyScripts() {
 	return {
@@ -10,16 +12,24 @@ function stripEmptyScripts() {
 		transform: {
 			order: 'pre', // puts it before vite-plugin-svelte:compile
 			async handler(content: string, filename: string) {
-				return content.replaceAll(/^<script>\s*<\/script>\s*/g, "");
+				if (/\.(md)$/.test(filename)) {
+					const s = new MagicString(content);
+					s.replaceAll(/^<script>\s*<\/script>\s*/g, (_) => "");
+					return {
+						code: s.toString(),
+						map: s.generateMap({ }), 
+					}
+				}
 			}
 		}
     }
-} 
+}
 
 export default defineConfig({
 	plugins: [
 		svelteMd({
-			markdownItUses: [mdFootnotes]
+			headId: 'id',
+			markdownItUses: [mdFootnotes, mdAnchors]
 		}),
 		enhancedImages(),
 		stripEmptyScripts(),
