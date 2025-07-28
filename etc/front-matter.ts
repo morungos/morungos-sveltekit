@@ -1,6 +1,9 @@
 import MagicString from 'magic-string';
 import grayMatter from "gray-matter";
 import type { PluginOption } from 'vite';
+import { removeMarkdown } from './remove-markdown.js';
+
+const WORDS_PER_MINUTE = 200;
 
 /**
  * A small Vite plugin that removes completely empty script elements
@@ -26,15 +29,20 @@ function preprocess(id: string, content: string) {
 	// The simple version is to replace the old front matter with a new
 	// block, and that's about all.
 
-	if (parsedFrontmatter.excerpt) {
-		parsedFrontmatter.data['excerpt'] = parsedFrontmatter.excerpt
+	const text = removeMarkdown(parsedFrontmatter.content).trim()
+	const words = text.split(/\s+/).length
+	parsedFrontmatter.data['words'] = words;
+	
+	if (! parsedFrontmatter.data['excerpt']) {
+		const paragraphs = text.split(/\n\s*\n/)
+		if (paragraphs.length > 0) {
+			const firstWords = paragraphs[0].split(/\s+/).join(" ")
+			parsedFrontmatter.data['excerpt'] = firstWords
+		}
 	}
-	parsedFrontmatter.data['words'] = 100;
 
 	parsedFrontmatter.data = {...defaultFrontMatter, ...parsedFrontmatter.data};
 	const reformatted = grayMatter.stringify(parsedFrontmatter.content, parsedFrontmatter.data)
-	console.log(reformatted);
-
 	return {
 		code: reformatted, 
 		map: null
