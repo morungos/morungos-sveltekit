@@ -73,6 +73,12 @@ a {
     &:focus, &:hover {
         color: #0085A1;
     }
+
+    &.pure-button {
+        &:focus, &:hover {
+            color: white;
+        }   
+    }
 }
 
 p {

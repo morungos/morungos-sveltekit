@@ -37,3 +37,17 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 {#each data.posts as post}
 <BlogSummary post={ post } />
 {/each}
+
+<div class="button-container">
+    <div class="buttons">
+        <a class="pure-button pure-button-primary" href="/posts">View All Posts →</a>
+    </div>
+</div>
+
+<style>
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+</style>
