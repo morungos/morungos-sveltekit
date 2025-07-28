@@ -1,4 +1,5 @@
 <script lang="ts">
+	import BlogSummary from "$lib/components/BlogSummary.svelte";
 import type { PageData } from "./$types";
 
 interface Props {
@@ -34,12 +35,5 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 <h2>Latest posts</h2>
 
 {#each data.posts as post}
-{#if post.url}
-<a href={post.url}><h3>{ post.frontmatter.title }</h3></a>
-{:else}
-<h3>{ post.frontmatter.title }</h3>
-{/if}
-<p>
-    Posted by Stuart on July 06, 2025 · 5 mins read
-</p>
+<BlogSummary post={ post } />
 {/each}
