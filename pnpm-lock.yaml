@@ -75,9 +75,9 @@ importers:
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
-      markdown-to-text:
-        specifier: ^0.1.1
-        version: 0.1.1
+      markdown-to-txt:
+        specifier: github:ejrbuss/markdown-to-txt
+        version: https://codeload.github.com/ejrbuss/markdown-to-txt/tar.gz/c557a27e4232d534820513dce74e1753aa4dc67e
       playwright:
         specifier: ^1.53.0
         version: 1.54.1
@@ -697,9 +697,6 @@ packages:
   '@types/aria-query@5.0.4':
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
 
-  '@types/chai@4.3.20':
-    resolution: {integrity: sha512-/pC9HAB5I/xMlc5FP77qjCnI16ChlJfW0tGa0IUcFn38VJrTV6DeZ60NU5KZBtaOZqjdpwTWohz5HU1RrhiYxQ==}
-
   '@types/chai@5.2.2':
     resolution: {integrity: sha512-8kB30R7Hwqf40JPiKhVzodJs2Qc1ZJ5zuT3uzw5Hq/dhNCl3G3l83jfpdI1e20BP348+fV7VIL/+FxaXkqBmWg==}
 
@@ -729,9 +726,6 @@ packages:
 
   '@types/mdurl@2.0.0':
     resolution: {integrity: sha512-RGdgjQUZba5p6QEFAVx2OGb8rQDL/cPRG7GiedRzMcJ1tYnUANBncjbSB1NRGwbvjcPeikRABz2nshyPk1bhWg==}
-
-  '@types/mocha@8.2.3':
-    resolution: {integrity: sha512-ekGvFhFgrc2zYQoX4JeZPmVzZxw6Dtllga7iGHzfbYIYkAMUx/sAFP2GdFpLff+vdHXu5fl7WX9AT+TtqYcsyw==}
 
   '@types/node@24.1.0':
     resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
@@ -1310,8 +1304,14 @@ packages:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
 
+  lodash.escape@4.0.1:
+    resolution: {integrity: sha512-nXEOnb/jK9g0DYMr1/Xvq6l5xMD7GDG55+GSYIYmS0G4tBk/hURD4JR9WCavs04t33WmJx9kCyp9vJ+mr4BOUw==}
+
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+
+  lodash.unescape@4.0.1:
+    resolution: {integrity: sha512-DhhGRshNS1aX6s5YdBE3njCCouPgnG29ebyHvImlZzXZf2SHgt+J08DHgytTPnpywNbO1Y8mNUFyQuIDBq2JZg==}
 
   loupe@3.1.4:
     resolution: {integrity: sha512-wJzkKwJrheKtknCOKNEtDK4iqg/MxmZheEMtSTYvnzRdEYaZzmgH976nenp8WdJRdx5Vc1X/9MO0Oszl6ezeXg==}
@@ -1336,8 +1336,14 @@ packages:
     resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
     hasBin: true
 
-  markdown-to-text@0.1.1:
-    resolution: {integrity: sha512-co/J5l8mJ2RK9wD/nQRGwO7JxoeyfvVNtOZll016EdAX2qYkwCWMdtYvJO42b41Ho7GFEJMuly9llf0Nj+ReQw==}
+  markdown-to-txt@https://codeload.github.com/ejrbuss/markdown-to-txt/tar.gz/c557a27e4232d534820513dce74e1753aa4dc67e:
+    resolution: {tarball: https://codeload.github.com/ejrbuss/markdown-to-txt/tar.gz/c557a27e4232d534820513dce74e1753aa4dc67e}
+    version: 2.0.1
+
+  marked@4.3.0:
+    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
+    engines: {node: '>= 12'}
+    hasBin: true
 
   mdast-util-find-and-replace@3.0.2:
     resolution: {integrity: sha512-Tmd1Vg/m3Xz43afeNxDIhWRtFZgM2VLyaf4vSTYwudTyeuTneoL3qtWMA5jeLyz/O1vDJmmV4QuScFCA2tBPwg==}
@@ -2297,8 +2303,6 @@ snapshots:
 
   '@types/aria-query@5.0.4': {}
 
-  '@types/chai@4.3.20': {}
-
   '@types/chai@5.2.2':
     dependencies:
       '@types/deep-eql': 4.0.2
@@ -2327,8 +2331,6 @@ snapshots:
       '@types/unist': 2.0.11
 
   '@types/mdurl@2.0.0': {}
-
-  '@types/mocha@8.2.3': {}
 
   '@types/node@24.1.0':
     dependencies:
@@ -2937,7 +2939,11 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
+  lodash.escape@4.0.1: {}
+
   lodash.merge@4.6.2: {}
+
+  lodash.unescape@4.0.1: {}
 
   loupe@3.1.4: {}
 
@@ -2963,10 +2969,13 @@ snapshots:
       punycode.js: 2.3.1
       uc.micro: 2.1.0
 
-  markdown-to-text@0.1.1:
+  markdown-to-txt@https://codeload.github.com/ejrbuss/markdown-to-txt/tar.gz/c557a27e4232d534820513dce74e1753aa4dc67e:
     dependencies:
-      '@types/chai': 4.3.20
-      '@types/mocha': 8.2.3
+      lodash.escape: 4.0.1
+      lodash.unescape: 4.0.1
+      marked: 4.3.0
+
+  marked@4.3.0: {}
 
   mdast-util-find-and-replace@3.0.2:
     dependencies:

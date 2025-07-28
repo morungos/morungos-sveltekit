@@ -1,7 +1,7 @@
 import MagicString from 'magic-string';
 import grayMatter from "gray-matter";
 import type { PluginOption } from 'vite';
-import { removeMarkdown } from './remove-markdown.js';
+import { markdownToTxt } from 'markdown-to-txt';
 
 const WORDS_PER_MINUTE = 200;
 
@@ -16,6 +16,9 @@ const defaultFrontMatter: { [key: string]: any } = {
 	author: 'Stuart'
 }
 
+const SCRIPTS_RE = /(<script[^>]*>)([\s\S]*?)<\/script>/gu;
+const SVELTE_TAGS_RE = /(<svelte:[a-z][^>]*>)([\s\S]*?)<\/svelte:[a-z]+>/gu;
+
 function preprocess(id: string, content: string) {
 	const s = new MagicString(content);
 	const parsedFrontmatter = grayMatter(content, {
@@ -29,7 +32,12 @@ function preprocess(id: string, content: string) {
 	// The simple version is to replace the old front matter with a new
 	// block, and that's about all.
 
-	const text = removeMarkdown(parsedFrontmatter.content).trim()
+	const filtered = parsedFrontmatter.content
+		.replaceAll(SVELTE_TAGS_RE, "\n")
+		.replaceAll(SCRIPTS_RE, "\n")
+		.trim()
+	const text = markdownToTxt(filtered).trim()
+
 	const words = text.split(/\s+/).length
 	parsedFrontmatter.data['words'] = words;
 	
