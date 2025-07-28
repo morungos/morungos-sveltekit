@@ -5,10 +5,12 @@ import svelteMd from "vite-plugin-svelte-md";
 import mdFootnotes from 'markdown-it-footnote';
 import mdAnchors from 'markdown-it-anchor';
 import { stripEmptyScripts } from './etc/strip-empty.js';
+import { frontMatterCompleter } from './etc/front-matter.js';
 import type { PluginOption } from 'vite';
 
 export default defineConfig({
 	plugins: [
+		frontMatterCompleter(),
 		svelteMd({
 			headId: 'id',
 			markdownItOptions: {
