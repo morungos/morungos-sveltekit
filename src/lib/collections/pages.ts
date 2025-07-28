@@ -8,7 +8,6 @@ export const modules = import.meta.glob("$lib/content/pages/**/*.md") as Content
 export type CollectionParams = { path: string}
 
 export function paramsToPath(path: string): string {
-    console.log("slug", path);
     return `/${PREFIX}/${path.replace(/\/$/, "")}.md`;
 }
 

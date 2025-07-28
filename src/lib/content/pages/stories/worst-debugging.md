@@ -6,7 +6,7 @@ background: '/img/bg-about.jpg'
 
 ## Debugging Syllabus hard disk lock-ups
 
-When it came to deployment for [Syllabus](/stories/syllabus), we hit a
+When it came to deployment for [Syllabus](/stories/syllabus/), we hit a
 delightfully hard problem, which in the end was about the hardest bug I've ever
 encountered. Syllabus was relatively expensive, and our management was firm that
 we needed some form of copy protection. The solution they came up with was a

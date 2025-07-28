@@ -93,7 +93,7 @@ we start to adjust our parameters. To measure these, I generated 100000 names
 with each setting, and count the number of Johns.
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/posts/ai-chart-1.png" 
+  <enhanced:img src="/src/images/posts/ai-chart-1.png" 
        alt="Chart of bias effects by temperature">
     <figcaption class="figure-caption">
     Shows the effect of temperature on the percentage of Johns and number 

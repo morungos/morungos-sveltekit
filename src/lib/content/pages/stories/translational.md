@@ -62,7 +62,7 @@ the application as to make some easy tasks much harder than they need to be.
 ([*Read more about this application here*](https://www.sciencedirect.com/science/article/pii/S0888754313000700))
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/pages/gen-004.png" 
+  <enhanced:img src="/src/images/pages/gen-004.png" 
        alt="Screen display of the Grails-based tracker">
     <figcaption class="figure-caption">
     Screen display of the Grails application for tracking samples in the
@@ -95,7 +95,7 @@ follows:
 - Data extraction, translation, loading: some Perl, some JavaScript, extensive SQLite for extraction
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/pages/heliotrope-2.png" 
+  <enhanced:img src="/src/images/pages/heliotrope-2.png" 
        alt="Screen display of Heliotrope">
     <figcaption class="figure-caption">
     Screen display of Heliotrope, looking at one particular mutation in the gene EGFR.
@@ -109,7 +109,7 @@ Heliotrope also added better reporting, especially using graphical displays
 within reports.
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/pages/heliotrope-3.png" style="border: 1px solid black"
+  <enhanced:img src="/src/images/pages/heliotrope-3.png" style="border: 1px solid black"
        alt="Screen display of Heliotrope">
     <figcaption class="figure-caption">
     One page of a report generated Heliotrope, looking at the same mutation in the gene EGFR.
@@ -130,7 +130,7 @@ researchers understand the possible clinical impacts of different genomic
 changes.
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/pages/cbio-006.png"
+  <enhanced:img src="/src/images/pages/cbio-006.png"
        alt="Screen display of cBioPortal">
     <figcaption class="figure-caption">
     One display for cBioPortal, focusing on data from TCGA (The Cancer Genome Atlas).

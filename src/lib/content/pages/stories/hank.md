@@ -30,7 +30,7 @@ data a little like a relational database, and 'instruction cards' that set out
 the steps followed by a process. The result looked a little like this:
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/pages/hank-1.png" 
+  <enhanced:img src="/src/images/pages/hank-1.png" 
        alt="Screen display of a relatively complex model in Hank">
     <figcaption class="figure-caption">
     Screen display of a relatively complex model in Hank, for the Towers of
@@ -41,7 +41,7 @@ the steps followed by a process. The result looked a little like this:
 ## Implementation
 
 We implemented the language and environment in Common Lisp for Windows, using
-the same Lisp we'd used with [Syllabus](/stories/syllabus.md). 
+the same Lisp we'd used with [Syllabus](/stories/syllabus/). 
 
 The core of the interpreter was built using a state-based interpreter -- much
 the same approach as
