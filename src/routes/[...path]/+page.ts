@@ -1,0 +1,36 @@
+import type { ContentModules } from "$lib/types";
+import { error } from "@sveltejs/kit";
+import type { EntryGenerator, PageLoad } from "./$types";
+import { getModules, paramsToPath, pathToParams } from "$lib/collections/pages";
+
+export const prerender = true;
+export const ssr = true;
+
+export const load = (async ({ params }) => {
+    const path = paramsToPath(params.path);
+    const modules = await getModules();
+    const contentModule = modules[path];
+
+    if (!contentModule) {
+        error(404, "Can't find content");
+    }
+
+    const { default: component, frontmatter } = await contentModule().then();
+
+    return { 
+        component, 
+        frontmatter,
+        title: frontmatter.title,
+    };
+}) satisfies PageLoad;
+
+export const entries: EntryGenerator = async () => {
+    const modules = await getModules()
+
+    const entries = Object.keys(modules).map((path) => {
+        return pathToParams(path);
+    }).filter((v) => !!v);
+
+    return entries;
+};
+
