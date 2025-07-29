@@ -1,19 +1,24 @@
-<div class="navbar-wrapper" id="menu">
+<script lang="ts">
+let open = $state(false);
+</script>
+
+<div class="navbar-wrapper" class:open={ open }>
     <div class="container navbar-body">
         <div class="navbar-flex">
             <div class="pure-menu">
                 <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
-                <button class="navbar-toggle" id="toggle" aria-label="Toggle menu">
+                <button class="navbar-toggle" aria-label="Toggle menu"
+                        onclick={() => open = !open}>
                     <s class="bar"></s>
                     <s class="bar"></s>
                 </button>
             </div>
             <div class="pure-menu pure-menu-horizontal navbar-menu-items navbar-can-transform">
                 <ul class="pure-menu-list">
-                    <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
-                    <li class="pure-menu-item"><a href="/about/" class="pure-menu-link">About</a></li>
-                    <li class="pure-menu-item"><a href="/posts/" class="pure-menu-link">Posts</a></li>
-                    <li class="pure-menu-item"><a href="/contact/" class="pure-menu-link">Contact</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/about/" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/posts/" class="pure-menu-link">Posts</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/contact/" class="pure-menu-link">Contact</a></li>
                     <!-- 
                     <li class="pure-menu-item"><a href="/gallery.html" class="pure-menu-link">Gallery</a></li>
                     -->
@@ -103,25 +108,30 @@ navbar-wrapper.open {
     transition: all 0.5s;
 }
 
-.navbar-toggle .bar:first-child {
+.navbar-wrapper.open .navbar-toggle .bar:first-child {
     -webkit-transform: translateY(-6px);
     -moz-transform: translateY(-6px);
     -ms-transform: translateY(-6px);
     transform: translateY(-6px);
 }
 
-.navbar-toggle.x .bar {
+.navbar-wrapper.open .navbar-toggle .bar {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-.navbar-toggle.x .bar:first-child {
+.navbar-wrapper.open .navbar-toggle .bar:first-child {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+}
+
+.navbar-item {
+    font-size: 16px;
+    line-height: 2.4;
 }
 
 @media (max-width: 47.999em) {
