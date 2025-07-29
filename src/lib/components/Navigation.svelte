@@ -114,4 +114,14 @@
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+@media (max-width: 47.999em) {
+    .navbar-menu-3 {
+        text-align: left;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
 </style>
