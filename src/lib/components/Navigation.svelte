@@ -1,27 +1,23 @@
 <div class="navbar-wrapper" id="menu">
     <div class="container navbar-body">
         <div class="navbar-flex">
-            <div class="">
-                <div class="pure-menu">
-                    <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
-                    <button class="navbar-toggle" id="toggle" aria-label="Toggle menu">
-                        <s class="bar"></s>
-                        <s class="bar"></s>
-                    </button>
-                </div>
+            <div class="pure-menu">
+                <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
+                <button class="navbar-toggle" id="toggle" aria-label="Toggle menu">
+                    <s class="bar"></s>
+                    <s class="bar"></s>
+                </button>
             </div>
-            <div class="">
-                <div class="pure-menu pure-menu-horizontal navbar-menu-3 navbar-can-transform">
-                    <ul class="pure-menu-list">
-                        <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
-                        <li class="pure-menu-item"><a href="/about/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="/posts/" class="pure-menu-link">Posts</a></li>
-                        <li class="pure-menu-item"><a href="/contact/" class="pure-menu-link">Contact</a></li>
-                        <!-- 
-                        <li class="pure-menu-item"><a href="/gallery.html" class="pure-menu-link">Gallery</a></li>
-                        -->
-                    </ul>
-                </div>
+            <div class="pure-menu pure-menu-horizontal navbar-menu-items navbar-can-transform">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="/about/" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item"><a href="/posts/" class="pure-menu-link">Posts</a></li>
+                    <li class="pure-menu-item"><a href="/contact/" class="pure-menu-link">Contact</a></li>
+                    <!-- 
+                    <li class="pure-menu-item"><a href="/gallery.html" class="pure-menu-link">Gallery</a></li>
+                    -->
+                </ul>
             </div>
         </div>
     </div>
@@ -42,6 +38,10 @@
     -ms-transition: height 0.5s;
     transition: height 0.5s;
     background-color: white;
+}
+
+.navbar-wrapper .pure-menu-item {
+    height: inherit;
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
@@ -65,8 +65,10 @@ navbar-wrapper.open {
     height: 14em;
 }
 
-.navbar-menu-3 {
-    text-align: right;
+.navbar-menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .navbar-toggle {
@@ -76,6 +78,14 @@ navbar-wrapper.open {
     top: 0;
     right: 0;
     display: none;
+    margin: .5em;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+.navbar-toggle:hover,.navbar-toggle:active {
+    background-color: #eee;
 }
 
 .navbar-toggle .bar {
@@ -86,7 +96,7 @@ navbar-wrapper.open {
     border-radius: 100px;
     position: absolute;
     top: 18px;
-    right: 7px;
+    right: 5px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -115,8 +125,8 @@ navbar-wrapper.open {
 }
 
 @media (max-width: 47.999em) {
-    .navbar-menu-3 {
-        text-align: left;
+    .navbar-menu-items {
+        display: none;
     }
 
     .navbar-toggle {
