@@ -1,7 +1,7 @@
 <div class="navbar-wrapper" id="menu">
     <div class="container navbar-body">
-        <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-2">
+        <div class="navbar-flex">
+            <div class="">
                 <div class="pure-menu">
                     <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
                     <button class="navbar-toggle" id="toggle" aria-label="Toggle menu">
@@ -10,7 +10,7 @@
                     </button>
                 </div>
             </div>
-            <div class="pure-u-1 pure-u-md-1-2">
+            <div class="">
                 <div class="pure-menu pure-menu-horizontal navbar-menu-3 navbar-can-transform">
                     <ul class="pure-menu-list">
                         <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
@@ -52,17 +52,16 @@
     color: #212529;
 }
 
-.navbar-body .pure-g {
+.navbar-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: -15px;
     margin-right: -15px;
 }
 
-.navbar-body .pure-menu-item {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.navbar-wrapper.open {
+navbar-wrapper.open {
     height: 14em;
 }
 
