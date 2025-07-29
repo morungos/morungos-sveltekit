@@ -4,8 +4,9 @@ export type ContentFrontMatter = {
 	id: string,
 	title?: string;
 	description?: string;
-	author?: string,
-	words?: number
+	author?: string;
+	words?: number;
+	excerpt?: string;
 };
 
 export type ContentModules = Record<
@@ -16,6 +17,16 @@ export type ContentModules = Record<
 export type CollectionItem = {
     id: string;
     url: string | null;
+	params: { [key: string]: string };
     frontmatter: ContentFrontMatter;
     component: Component;
+}
+
+export type CollectionPage = {
+	page: number;
+	hasPrevious: boolean;
+	previousPage: number;
+	hasNext: boolean;
+	nextPage: number;
+	items: Array<CollectionItem>
 }

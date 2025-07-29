@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BlogSummary from "$lib/components/BlogSummary.svelte";
+import BlogSummary from "$lib/components/BlogSummary.svelte";
 import type { PageData } from "./$types";
 
 interface Props {

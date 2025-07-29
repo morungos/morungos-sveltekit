@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { CollectionItem } from '$lib/types'
+import type { CollectionItem } from "$lib/types";
 let { post }: { post: CollectionItem } = $props();
 
 const fm = post.frontmatter

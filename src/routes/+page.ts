@@ -14,12 +14,14 @@ export const load = (async ({ _params }) => {
     const latestPostIds = Object.keys(latestPostModules)
     const latestPostLoads = await Promise.all(Object.values(latestPostModules).map((f) => f()))
     const latestPostURLs = latestPostIds.map((id) => pathToURL(id))
+    const latestPostParams = latestPostIds.map((id) => pathToURL(id))
     return { 
         title: "Building technology with craft",
         background: "/src/backgrounds/bg-index.jpg",
         posts: latestPostIds.map((id, i) => ({
             id: id,
             url:latestPostURLs[i],
+            params: latestPostParams[i],
             frontmatter: latestPostLoads[i].frontmatter,
             component: latestPostLoads[i].default
         }))
