@@ -66,7 +66,7 @@ let open = $state(false);
     margin-right: -15px;
 }
 
-navbar-wrapper.open {
+.navbar-wrapper.open {
     height: 14em;
 }
 
@@ -108,11 +108,11 @@ navbar-wrapper.open {
     transition: all 0.5s;
 }
 
-.navbar-wrapper.open .navbar-toggle .bar:first-child {
-    -webkit-transform: translateY(-6px);
-    -moz-transform: translateY(-6px);
-    -ms-transform: translateY(-6px);
-    transform: translateY(-6px);
+.navbar-wrapper .navbar-toggle .bar:first-child {
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .navbar-wrapper.open .navbar-toggle .bar {
