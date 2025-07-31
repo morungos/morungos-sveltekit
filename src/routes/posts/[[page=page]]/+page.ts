@@ -11,7 +11,6 @@ export const load = (async ({ params }) => {
     // within the collection, althere here what we care about more is a next and 
     // previous link.
 
-    console.log("req", params)
     const pageRequested = params.page?.replace(/^page/, "")
 
     let pageNumber = 1
@@ -21,7 +20,6 @@ export const load = (async ({ params }) => {
         // Do nothing
     }
 
-    console.log("parsed", pageNumber)
     const page = await getModulePage(pageNumber - 1, 5)
     return { 
         page: page
