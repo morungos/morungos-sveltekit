@@ -3,6 +3,34 @@ import type { CollectionItem } from "$lib/types";
 let { post }: { post: CollectionItem } = $props();
 
 const fm = post.frontmatter
+
+const formatter = new Intl.DateTimeFormat("en-CA", {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+});
+
+function getPostDate(post: CollectionItem) {
+    const year = post.params['year']
+    const month = post.params['month']
+    const day = post.params['day']
+    if (! year || ! month || ! day) {
+        return null;
+    }
+
+    try {
+        const parsedYear = parseInt(year)
+        const parsedMonth = parseInt(month)
+        const parsedDay = parseInt(day)
+
+        const date = new Date(parsedYear, parsedMonth, parsedDay)
+        return formatter.format(date);
+    } catch (e) {
+        return null;
+    }
+}
+
+let postDate = $derived(getPostDate(post));
 </script>
 
 <div class="post-preview">
@@ -21,7 +49,9 @@ const fm = post.frontmatter
     {#if fm.author}
     by { fm.author } on
     {/if}
-    July 06, 2025 
+    {#if postDate}
+    { postDate } 
+    {/if}
     {#if fm.words}
     {@const duration = Math.ceil(fm.words / 200)}
     · { duration } minute{#if duration > 1}s{/if} read
@@ -34,11 +64,6 @@ const fm = post.frontmatter
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 10px;
-}
-.post-subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    margin: 0 0 10px;
 }
 .post-meta {
     font-size: 18px;

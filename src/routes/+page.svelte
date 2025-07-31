@@ -34,7 +34,7 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 
 <h2>Latest posts</h2>
 
-{#each data.posts as post}
+{#each data.posts.items as post}
 <BlogSummary post={ post } />
 {/each}
 

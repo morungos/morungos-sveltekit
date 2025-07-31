@@ -11,20 +11,10 @@ export const ssr = true;
  * URLs, which we need to get from the collection and the file identifiers.
  */
 export const load = (async ({ _params }) => {
-    const latestPostModules = await getModulePage(0, 2)
-    const latestPostIds = Object.keys(latestPostModules)
-    const latestPostLoads = await Promise.all(Object.values(latestPostModules).map((f) => f()))
-    const latestPostURLs = latestPostIds.map((id) => pathToURL(id))
-    const latestPostParams = latestPostIds.map((id) => pathToURL(id))
+    const page = await getModulePage(0, 2)
     return { 
         title: "Building technology with craft",
         background: "/src/backgrounds/bg-index.jpg",
-        posts: latestPostIds.map((id, i) => ({
-            id: id,
-            url:latestPostURLs[i],
-            params: latestPostParams[i],
-            frontmatter: latestPostLoads[i].frontmatter,
-            component: latestPostLoads[i].default
-        }))
+        posts: page
     };
 }) satisfies PageLoad;
