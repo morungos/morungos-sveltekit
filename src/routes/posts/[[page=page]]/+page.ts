@@ -1,5 +1,7 @@
-import { getModulePage } from "$lib/collections/posts";
-import type { PageLoad } from "./$types";
+import { getModulePage, modules } from "$lib/collections/posts";
+import type { PageLoad, EntryGenerator } from "./$types";
+
+const BLOG_PAGE_SIZE = 5;
 
 export const prerender = true;
 export const ssr = true;
@@ -20,9 +22,19 @@ export const load = (async ({ params }) => {
         // Do nothing
     }
 
-    const page = await getModulePage(pageNumber - 1, 5)
+    const page = await getModulePage(pageNumber - 1, BLOG_PAGE_SIZE)
     return { 
         page: page
     }
 }) satisfies PageLoad;
+
+/**
+ * The EntryGenerator should return all the blog pages, and that should suffice.
+ * @returns 
+ */
+export const entries: EntryGenerator = () => {
+    const pageCount = Math.ceil(Object.keys(modules).length / BLOG_PAGE_SIZE);
+    const rest: Array<{ page: string | undefined }> = new Array(pageCount).fill(true).map((x, i) => ({ page: 'page' + (i + 1) }))
+    return rest.concat([{ page: void 0}]);
+};
 
