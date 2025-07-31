@@ -11,7 +11,6 @@ const fm = post.frontmatter
 {:else}
 <h3 class="post-title">{ fm.title }</h3>
 {/if}
-{#if fm.excerpt}
 <p>
     { fm.excerpt }
     {#if post.url}
@@ -19,14 +18,13 @@ const fm = post.frontmatter
     {/if}
 </p>
 <p class="post-meta">
-{/if}
     {#if fm.author}
-    by { fm.author } 
-    on July 06, 2025 
-    ·
+    by { fm.author } on
+    {/if}
+    July 06, 2025 
     {#if fm.words}
     {@const duration = Math.ceil(fm.words / 200)}
-    { duration } minute{#if duration > 1}s{/if} read
+    · { duration } minute{#if duration > 1}s{/if} read
     {/if}
 </p>
 </div>
