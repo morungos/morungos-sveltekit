@@ -1,13 +1,17 @@
 <script lang="ts">
-import { slide } from 'svelte/transition'
 let open = $state(false);
+
+// Should really handle navigations from here and close the men accordingly.
+function onclick() {
+    open = false;
+}
 </script>
 
 <div class="navbar-wrapper">
     <div class="container navbar-body">
         <div class="navbar-flex">
             <div class="pure-menu">
-                <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
+                <a href="/" class="pure-menu-item pure-menu-link navbar-brand" onclick={onclick}>Stuart Watt</a>
                 <button class="navbar-toggle" aria-label="Toggle menu"
                         onclick={() => open = !open}>
                     <s class="navbar-toggle-icon"></s>
@@ -15,10 +19,10 @@ let open = $state(false);
             </div>
             <div class="pure-menu navbar-menu-items navbar-can-transform" class:open={ open }>
                 <ul class="pure-menu-list">
-                    <li class="pure-menu-item navbar-item"><a href="/" class="pure-menu-link">Home</a></li>
-                    <li class="pure-menu-item navbar-item"><a href="/about/" class="pure-menu-link">About</a></li>
-                    <li class="pure-menu-item navbar-item"><a href="/posts/" class="pure-menu-link">Posts</a></li>
-                    <li class="pure-menu-item navbar-item"><a href="/contact/" class="pure-menu-link">Contact</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/" class="pure-menu-link" onclick={onclick}>Home</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/about/" class="pure-menu-link" onclick={onclick}>About</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/posts/" class="pure-menu-link" onclick={onclick}>Posts</a></li>
+                    <li class="pure-menu-item navbar-item"><a href="/contact/" class="pure-menu-link" >Contact</a></li>
                     <!-- 
                     <li class="pure-menu-item"><a href="/gallery.html" class="pure-menu-link">Gallery</a></li>
                     -->
