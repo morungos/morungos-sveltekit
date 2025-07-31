@@ -42,10 +42,6 @@ function onclick() {
     left: 0;
     right: 0;
     -webkit-font-smoothing: antialiased;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
-    transition: height 0.5s;
     background-color: white;
 }
 
@@ -114,13 +110,6 @@ function onclick() {
 .navbar-item {
     font-size: 16px;
     line-height: 2.4;
-}
-
-@starting-style {
-  .navbar-menu-items.open {
-    display: none;
-    height: 0;
-  }
 }
 
 @media (max-width: 47.999em) {
