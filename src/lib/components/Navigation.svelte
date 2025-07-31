@@ -9,8 +9,7 @@ let open = $state(false);
                 <a href="/" class="pure-menu-item pure-menu-link navbar-brand">Stuart Watt</a>
                 <button class="navbar-toggle" aria-label="Toggle menu"
                         onclick={() => open = !open}>
-                    <s class="bar"></s>
-                    <s class="bar"></s>
+                    <s class="navbar-toggle-icon"></s>
                 </button>
             </div>
             <div class="pure-menu pure-menu-horizontal navbar-menu-items navbar-can-transform">
@@ -87,46 +86,21 @@ let open = $state(false);
     background-color: white;
     border: 1px solid #777;
     border-radius: 4px;
+    padding: 4px;
 }
 
 .navbar-toggle:hover,.navbar-toggle:active {
     background-color: #eee;
 }
 
-.navbar-toggle .bar {
-    background-color: #777;
+.navbar-toggle-icon {
     display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 100px;
-    position: absolute;
-    top: 18px;
-    right: 5px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
-.navbar-wrapper .navbar-toggle .bar:first-child {
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    transform: translateY(-8px);
-}
-
-.navbar-wrapper.open .navbar-toggle .bar {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.navbar-wrapper.open .navbar-toggle .bar:first-child {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url("data:image/svg+xml,%3Csvg viewBox='-0.5 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 12.32H22' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M2 18.32H22' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M2 6.32001H22' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/svg%3E")
 }
 
 .navbar-item {
