@@ -1,3 +1,4 @@
+import { getModulePage } from "$lib/collections/posts";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
@@ -10,7 +11,20 @@ export const load = (async ({ params }) => {
     // within the collection, althere here what we care about more is a next and 
     // previous link.
 
+    console.log("req", params)
+    const pageRequested = params.page?.replace(/^page/, "")
+
+    let pageNumber = 1
+    try {
+        pageNumber = parseInt(pageRequested || "1")
+    } catch {
+        // Do nothing
+    }
+
+    console.log("parsed", pageNumber)
+    const page = await getModulePage(pageNumber - 1, 5)
     return { 
-        page: params.page
+        page: page
     }
 }) satisfies PageLoad;
+

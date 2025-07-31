@@ -39,8 +39,10 @@ export async function getModules(): Promise<ContentModules> {
 }
 
 export async function getModulePage(pageNumber: number, pageSize: number = 5): Promise<CollectionPage> {
+
     const sorted = Object.entries(modules).sort((a, b) => b[0].localeCompare(a[0]))
     const start = pageNumber * pageSize
+
     const subset = sorted.slice(start, start + pageSize)
 
     const pageItems = Object.fromEntries(subset)
