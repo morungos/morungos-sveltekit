@@ -48,8 +48,8 @@ that's entirely natural cat behaviour -- what we're attempting is to direct LLMs
 and harness them into some extremely complex and demanding cognitive behaviours,
 it is like trying to get your kitten to assemble IKEA furniture
 
-<figure class="figure w-100" style="text-align: center">
-  <enhanced:img class="img-fluid" src="/src/images/posts/morag-kitten.jpg" style="width: 500px;"
+<figure class="figure">
+  <enhanced:img  src="/src/images/posts/morag-kitten.jpg"
        alt="A grey tabby and white kitten, with amber eyes, white paws, and a black nose, looking down from the top of an armoire"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 1. Morag as a kitten
@@ -97,8 +97,8 @@ the box concept a little further with the "operant conditioning chamber", typica
 using  a series of levers and rewards to simplify things down, making it easier
 to assemble theories and explanations.
 
-<figure class="figure w-100" style="text-align: center">
-  <enhanced:img class="img-fluid" src="/src/images/posts/irritant.jpg" style="width: 500px;"
+<figure class="figure">
+  <enhanced:img src="/src/images/posts/irritant.jpg" style="width: 500px;"
        alt="A grey tabby and white cat, sitting inside a cardboard box labelled 'Irritant'"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 2. Morag in a box -- "if I fits I sits"
@@ -194,8 +194,8 @@ question: how should we test our kittens? How can we build systems with tiny
 agents of chaos inside, in such a way that we can still control them into
 functioning as part of a cohesive and effective system?
 
-<figure class="figure w-100" style="text-align: center">
-  <enhanced:img class="img-fluid" src="/src/images/posts/cat-dressed-vintage-photo.jpg" style="width: 500px;"
+<figure class="figure">
+  <enhanced:img src="/src/images/posts/cat-dressed-vintage-photo.jpg"
        alt="Two tabby kittems, dressed for work"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 3. Putting kittens to work -- always harder thank it looks.

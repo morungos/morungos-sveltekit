@@ -25,9 +25,9 @@ By and large, the new component had to follow the flow and pattern of the
 previous implementation, which had been in [Vue 2](https://v2.vuejs.org), then at end of life.
 And this is what it looked like, on one of our test pages.
 
-<figure class="figure w-75">
+<figure class="figure">
   <enhanced:img 
-    class="img-fluid border" src="/src/images/pages/flow-regular-5.png" 
+    src="/src/images/pages/flow-regular-5.png" 
     alt="Screenshot of chat component in use"></enhanced:img>
 
   <figcaption class="figure-caption">Screenshot of chat component in use</figcaption>

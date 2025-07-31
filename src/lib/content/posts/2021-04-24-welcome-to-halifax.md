@@ -33,8 +33,8 @@ will
 chatter at you if you infringe on their little territories while they stuff nuts into their
 little mouths.
 
-<figure class="figure w-100" style="text-align: center">
-  <enhanced:img class="img-fluid" src="/src/images/posts/white-tailed-deer.jpg" alt="White-tailed deer"></enhanced:img>
+<figure class="figure">
+  <enhanced:img src="/src/images/posts/white-tailed-deer.jpg" alt="White-tailed deer"></enhanced:img>
   <figcaption>Some of our visiting white-tailed deer, seen from our back window</figcaption>
 </figure>
 
