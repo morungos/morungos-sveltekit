@@ -17,6 +17,7 @@ https://pure-css.github.io/layouts/tucked-menu-vertical/
 <script lang="ts">
 import Navigation from '$lib/components/Navigation.svelte';
 import Masthead from '$lib/components/Masthead.svelte';
+import Footer from '$lib/components/Footer.svelte';
 
 import '../app.css';
 	
@@ -37,6 +38,8 @@ import { page } from '$app/state';
 		</div>
 	</div>
 </div>
+
+<Footer></Footer>
 
 <style>
 .scrollbar-transparent {

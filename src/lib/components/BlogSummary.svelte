@@ -11,17 +11,17 @@ const fm = post.frontmatter
 {:else}
 <h3 class="post-title">{ fm.title }</h3>
 {/if}
-<p class="post-subtitle">
+{#if fm.excerpt}
+<p>
     { fm.excerpt }
     {#if post.url}
     <i><a href={ post.url }>... Read more...</a></i>
     {/if}
 </p>
 <p class="post-meta">
-    Posted 
+{/if}
     {#if fm.author}
     by { fm.author } 
-    {/if}
     on July 06, 2025 
     ·
     {#if fm.words}

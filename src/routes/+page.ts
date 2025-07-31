@@ -1,3 +1,4 @@
+import { pathToParams } from "$lib/collections/pages";
 import { getModulePage, pathToURL } from "$lib/collections/posts";
 import type { PageLoad } from "./$types";
 
