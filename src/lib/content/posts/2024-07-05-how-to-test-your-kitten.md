@@ -49,8 +49,8 @@ and harness them into some extremely complex and demanding cognitive behaviours,
 it is like trying to get your kitten to assemble IKEA furniture
 
 <figure class="figure w-100" style="text-align: center">
-  <img class="img-fluid" src="/img/posts/morag-kitten.jpeg" style="width: 500px;"
-       alt="A grey tabby and white kitten, with amber eyes, white paws, and a black nose, looking down from the top of an armoire">
+  <enhanced:img class="img-fluid" src="/src/images/posts/morag-kitten.jpg" style="width: 500px;"
+       alt="A grey tabby and white kitten, with amber eyes, white paws, and a black nose, looking down from the top of an armoire"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 1. Morag as a kitten
     </figcaption>
@@ -98,8 +98,8 @@ using  a series of levers and rewards to simplify things down, making it easier
 to assemble theories and explanations.
 
 <figure class="figure w-100" style="text-align: center">
-  <img class="img-fluid" src="/img/posts/irritant.jpeg" style="width: 500px;"
-       alt="A grey tabby and white cat, sitting inside a cardboard box labelled 'Irritant'">
+  <enhanced:img class="img-fluid" src="/src/images/posts/irritant.jpg" style="width: 500px;"
+       alt="A grey tabby and white cat, sitting inside a cardboard box labelled 'Irritant'"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 2. Morag in a box -- "if I fits I sits"
     </figcaption>
@@ -195,8 +195,8 @@ agents of chaos inside, in such a way that we can still control them into
 functioning as part of a cohesive and effective system?
 
 <figure class="figure w-100" style="text-align: center">
-  <img class="img-fluid" src="/img/posts/cat-dressed-vintage-photo.jpg" style="width: 500px;"
-       alt="Two tabby kittems, dressed for work">
+  <enhanced:img class="img-fluid" src="/src/images/posts/cat-dressed-vintage-photo.jpg" style="width: 500px;"
+       alt="Two tabby kittems, dressed for work"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 3. Putting kittens to work -- always harder thank it looks.
     Used under <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain</a>

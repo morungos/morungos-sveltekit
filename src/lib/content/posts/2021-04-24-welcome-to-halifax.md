@@ -33,8 +33,10 @@ will
 chatter at you if you infringe on their little territories while they stuff nuts into their
 little mouths.
 
-<img class="img-fluid" src="/img/posts/white-tailed-deer.jpg" alt="White-tailed deer">
-<span class="caption text-muted">Some of our visiting white-tailed deer, seen from our back window</span>
+<figure class="figure w-100" style="text-align: center">
+  <enhanced:img class="img-fluid" src="/src/images/posts/white-tailed-deer.jpg" alt="White-tailed deer"></enhanced:img>
+  <figcaption>Some of our visiting white-tailed deer, seen from our back window</figcaption>
+</figure>
 
 Moving house in COVID times was not without challenges, managing viewings, packing, and 
 finding a whole new place to live. Nova Scotia has a good and strict quarantine system, so

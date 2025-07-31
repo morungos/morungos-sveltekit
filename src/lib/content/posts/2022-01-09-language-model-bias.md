@@ -114,9 +114,7 @@ temperature gets to 0.1, virtually every single generated name is a John.
 They're all Johns. 
 
 <figure class="figure">
-  <div class="text-center">
-    <img class="img-fluid d-inline-block" src="/img/posts/johns.gif" alt="They're all John">
-  </div>
+  <enhanced:img class="img-fluid d-inline-block" src="/src/images/posts/johns.gif" alt="They're all John"></enhanced:img>
   <figcaption class="figure-caption">
     They're all Johns, thanks to the miracle of cloning.
   </figcaption>
@@ -125,8 +123,8 @@ They're all Johns.
 And there's a similar effect for top-p. 
 
 <figure class="figure">
-  <img class="img-fluid" src="/img/posts/ai-chart-2.png" 
-       alt="Chart of bias effects by top p">
+  <enhanced:img class="img-fluid" src="/src/images/posts/ai-chart-2.png" 
+       alt="Chart of bias effects by top p"></enhanced:img>
   <figcaption class="figure-caption">
     Shows the effect of top-p on the percentage of Johns and number 
     of fucks, for unlimited top-k and fixed temperature of 1.
