@@ -1,8 +1,9 @@
 <script lang="ts">
+import { slide } from 'svelte/transition'
 let open = $state(false);
 </script>
 
-<div class="navbar-wrapper" class:open={ open }>
+<div class="navbar-wrapper">
     <div class="container navbar-body">
         <div class="navbar-flex">
             <div class="pure-menu">
@@ -12,7 +13,7 @@ let open = $state(false);
                     <s class="navbar-toggle-icon"></s>
                 </button>
             </div>
-            <div class="pure-menu pure-menu-horizontal navbar-menu-items navbar-can-transform">
+            <div class="pure-menu navbar-menu-items navbar-can-transform" class:open={ open }>
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item navbar-item"><a href="/" class="pure-menu-link">Home</a></li>
                     <li class="pure-menu-item navbar-item"><a href="/about/" class="pure-menu-link">About</a></li>
@@ -57,22 +58,25 @@ let open = $state(false);
 }
 
 .navbar-flex {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: -15px;
     margin-right: -15px;
 }
-
-.navbar-wrapper.open {
-    height: 14em;
-}
-
 .navbar-menu-items {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: end;
+}
+
+.navbar-menu-items .pure-menu-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-menu-items.open {
+    display: flex;
 }
 
 .navbar-toggle {
@@ -108,11 +112,26 @@ let open = $state(false);
     line-height: 2.4;
 }
 
+@starting-style {
+  .navbar-menu-items.open {
+    display: none;
+    height: 0;
+  }
+}
+
 @media (max-width: 47.999em) {
+    .navbar-flex {
+        flex-direction: column;
+    }
     .navbar-menu-items {
         display: none;
     }
-
+    .navbar-menu-items .pure-menu-list {
+        flex-direction: column;
+    }
+    .navbar-menu-items .pure-menu-link {
+        padding: 0 1em;
+    }
     .navbar-toggle {
         display: block;
     }
