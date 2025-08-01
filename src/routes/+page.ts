@@ -14,7 +14,7 @@ export const load = (async ({ _params }) => {
     const page = await getModulePage(0, 2)
     return { 
         title: "Building technology with craft",
-        background: "/src/backgrounds/bg-index.jpg",
+        background: "bg-index.jpg",
         posts: page
     };
 }) satisfies PageLoad;

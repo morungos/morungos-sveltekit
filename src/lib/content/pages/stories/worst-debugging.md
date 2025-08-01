@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My worst debugging experience
-background: '/img/bg-about.jpg'
+background: 'bg-about.jpg'
 ---
 
 ## Debugging Syllabus hard disk lock-ups

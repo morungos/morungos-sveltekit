@@ -22,7 +22,7 @@ export const load = (async () => {
         description?: string
     } = { 
         slugList,
-        background: '/src/backgrounds/bg-about.jpg',
+        background: 'bg-about.jpg',
     };
 
 	return layoutData;

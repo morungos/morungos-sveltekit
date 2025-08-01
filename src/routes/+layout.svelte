@@ -23,6 +23,7 @@ import '../app.css';
 	
 let { children } = $props();
 import { page } from '$app/state';
+
 </script>
 
 <Navigation />

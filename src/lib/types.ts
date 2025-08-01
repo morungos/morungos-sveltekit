@@ -3,6 +3,7 @@ import type { Component } from 'svelte';
 export type ContentFrontMatter = {
 	id: string,
 	title?: string;
+	background?: string;
 	description?: string;
 	author?: string;
 	words?: number;

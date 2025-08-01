@@ -2,7 +2,7 @@
 layout: page
 title: 'Heliotrope and cBioPortal'
 subtitle: 'Translational bioinformatics in clinical research'
-background: '/img/bg-about.jpg'
+background: 'bg-about.jpg'
 ---
 
 One field I particularly enjoyed working in was translational bioinformatics. I

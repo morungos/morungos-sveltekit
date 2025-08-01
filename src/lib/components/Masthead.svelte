@@ -1,18 +1,29 @@
+<!--
+A significant challenge here is that we need to dynamically choose an image and
+yet allow them to be preprocessed. We could, in theory, just reprpocess a whole
+bunch of them. But, Vite silently changes our query from '$lib/.' to '/src/lib'
+or whatever, making Markdown needing to be aware of header image file locations.
+Which is less than ideal. We solve this in a less than elegant matter by forcing
+a new cards directory to be flat an both cards and backgrounds are required to
+accept them.
+-->
+
 <script lang="ts">
 let { title, background } = $props();
+import { modules } from '$lib/collections/cards'
 
-const imageModules = import.meta.glob(
-    '$lib/../backgrounds/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
-    {
-        eager: true,
-        query: '?enhanced',
-        import: 'default'
+function getCard(background: string) {
+    const card = modules[background ?? 'bg-about.jpg']
+    if (! card) {
+        throw new Error("Missing background: " + background)
     }
-) as Record<string, any>
+    return card
+}
+const card = $derived(getCard(background))
 </script>
 
 <header class="masthead-wrapper" id="menu">
-    <enhanced:img src={ imageModules[background ?? '/src/backgrounds/bg-about.jpg'] } alt="An alt text" />
+    <enhanced:img src={ card } alt="An alt text" />
     <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">

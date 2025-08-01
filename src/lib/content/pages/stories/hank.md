@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Hank: a visual modelling language'
-background: '/img/bg-about.jpg'
+background: 'bg-about.jpg'
 ---
 
 ## Cognitive modelling

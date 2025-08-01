@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tiny embedded language models
-background: '/img/bg-about.jpg'
+background: 'bg-about.jpg'
 ---
 
 I'd been working for a while supporting some real-time embedded development
