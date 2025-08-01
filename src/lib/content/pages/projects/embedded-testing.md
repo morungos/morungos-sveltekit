@@ -120,7 +120,6 @@ has an effect here. And lower temperatures get boringly repetitive.
 | John Dorther  |  John B. Martin  | Mary Howard Condon | Ernest Maris Lange |
 | Alexander Stevens  |  Andrew Leon  | Steve Hopley | Christian Sanders |
 | John Harrison  |  John H. Collins  | Christopher Beck | Gordon McNolan |
-{:.table.table-sm}
 
 The same sort of thing happens with the quote texts, but it's not quite
 as obvious.
