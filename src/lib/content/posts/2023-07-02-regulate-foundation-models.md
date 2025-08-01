@@ -2,7 +2,7 @@
 layout: post
 title: 'Cheese and the latent harms of foundation models'
 author: Stuart
-card: 'cheese_PNG7.png'
+card: 'cheese.jpg'
 card_alt: "Slices of Swiss cheese"
 summary: >-
   Has OpenAI has consciously planned
