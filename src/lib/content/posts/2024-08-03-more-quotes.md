@@ -110,6 +110,8 @@ most extensively. Metaphor and simile are also common, as is alliteration.
 | Paradiastole | Reframing a vice as a virtue | "Do not be afraid to fail -- most do every day" |
 | Simile | Comparing two unlike things, typically using "like" or "as" |  "A conscience is like a baby -- it has to go to sleep before you can" |
 
+{.pure-table .pure-table-horizontal}
+
 **Table 1. Some of the more common rhetorical figures found in inspirational quotes**
 
 Enter artificial intelligence, and particularly language models. If you think

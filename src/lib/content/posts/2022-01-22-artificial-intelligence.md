@@ -75,6 +75,8 @@ for example, or the creation of collaborative networks.
 | Consequentialist ethics | Virtue ethics |
 | Guided by theory | Guided by experiment |
 
+{.pure-table .pure-table-horizontal}
+
 **Table 1. Characteristics of Big Science and Little Science**
 
 Harry Collins (2003) uses a richer typology, distinguishing "centralized big science"
@@ -764,7 +766,9 @@ preserving their identity and innovation as a field in their own right. Until th
 transdiscipline, this XKCD will continue to apply.
 
 <figure>
+
 ![Here to Help, by XKCD](https://imgs.xkcd.com/comics/here_to_help.png)
+
 <figcaption>
 [Here to Help, by XKCD](https://xkcd.com/1831/)
 </figcaption>
