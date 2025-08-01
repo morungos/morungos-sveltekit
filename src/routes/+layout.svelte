@@ -23,13 +23,16 @@ import '../app.css';
 	
 let { children } = $props();
 import { page } from '$app/state';
-
 </script>
 
+<svelte:head>
+	<title>{page.data.title}</title>
+	<!-- <meta name="description" content={data.frontmatter.description} /> -->
+	<meta property="og:locale" content="en_CA" />
+</svelte:head>
+
 <Navigation />
-
 <Masthead background={ page.data.background} title={ page.data.title} />
-
 <div class="container">
 	<div class="flex flex-col md:flex-row">
 		<div class="overflow-y-scroll w-full md:h-screen scrollbar-transparent">

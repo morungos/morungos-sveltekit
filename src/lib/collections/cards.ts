@@ -1,9 +1,14 @@
+/**
+ * By default, render mages to widths of 2400, 1200, and 600, for srcsets.
+ */
+
 const imageModules = import.meta.glob(
     '$lib/assets/cards/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp,svg}',
     {
         eager: true,
         query: {
             enhanced: true,
+            w: "2400;1200;600",
         },
         import: 'default',
     }

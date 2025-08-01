@@ -10,11 +10,10 @@ let { data }: Props = $props();
 </script>
 
 <svelte:head>
-	<title>{data.frontmatter.title}</title>
-	<meta
-		name="description"
-		content={data.frontmatter.description}
-	/>
+	<title>{ data.frontmatter.title }</title>
+	<meta name="description" content={ data.frontmatter.description } />
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="en_CA" />
 </svelte:head>
 
 <article>

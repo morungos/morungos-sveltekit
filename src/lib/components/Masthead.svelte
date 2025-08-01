@@ -19,8 +19,35 @@ function getCard(background: string) {
     }
     return card
 }
+
+function getCardImageURL(card: any): string {
+    const src: string = card.img?.src;
+    const sources: { [k: string]: string } = card?.sources;
+    if (! src || ! sources) {
+        throw new Error("Can't find card");
+    } 
+
+    // Find the type, we might not have an extension here thanks to imagetools
+    const native = Object.keys(sources).find((k: string) => sources[k].includes(src))
+    if (! native) return src;
+    const images = sources[native].split(/\s*,\s*/)
+
+    // Look for a 1200w URL of that type, or just return the src
+    for(const image of images) {
+        if (image.endsWith(" 1200w")) {
+            return image.slice(0, -6)
+        }
+    }
+    return src
+}
+
+
 const card = $derived(getCard(background))
 </script>
+
+<svelte:head>
+    <meta property="og:image" content={ getCardImageURL(card) } />
+</svelte:head>
 
 <header class="masthead-wrapper" id="menu">
     <enhanced:img src={ card } alt="An alt text" />
