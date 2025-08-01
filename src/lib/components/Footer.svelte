@@ -40,7 +40,7 @@ let date = new Date();
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #aa0000;
+    background-color: #944444;
     border-radius: 100%;
     background-repeat: no-repeat;
     background-position: center;

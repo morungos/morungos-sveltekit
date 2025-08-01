@@ -136,11 +136,20 @@ Here are some examples, whether or not they make it into the final feed, who kno
 I will be applying some manual moderation, at least to start with -- not to select
 the best, but to be sure we don't break any rules with anything too naughty.
 
-!["He that leaves a wife wi' the bairns be wise what ye break a man"](/img/posts/22ead4c162e75575ccaed5c571cfac69b543d8da.jpeg)
+<figure class="figure">
+  <enhanced:img src="/src/images/posts/22ead4c162e75575ccaed5c571cfac69b543d8da.jpg" alt="He that leaves a wife wi' the bairns be wise what ye break a man"></enhanced:img>
+  <figcaption>He that leaves a wife wi' the bairns be wise what ye break a man</figcaption>
+</figure>
 
-!["Ye're a pudding to his foot o' an ill fool"](/img/posts/36333ef1e102420d6cd5673b4f1247dca29e43ef.jpeg)
+<figure class="figure">
+  <enhanced:img src="/src/images/posts/36333ef1e102420d6cd5673b4f1247dca29e43ef.jpg" alt="Ye're a pudding to his foot o' an ill fool"></enhanced:img>
+  <figcaption>Ye're a pudding to his foot o' an ill fool</figcaption>
+</figure>
 
-!["He wha was better than my shoon than a cow o’ your meat"](/img/posts/5ada0cc1c48581a1192a74b83a261e0fa5d51b09.jpeg)
+<figure class="figure">
+  <enhanced:img src="/src/images/posts/5ada0cc1c48581a1192a74b83a261e0fa5d51b09.jpg" alt="He wha was better than my shoon than a cow o’ your meat"></enhanced:img>
+  <figcaption>He wha was better than my shoon than a cow o’ your meat</figcaption>
+</figure>
 
 ## Future plans
 
