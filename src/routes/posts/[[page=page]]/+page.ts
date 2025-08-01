@@ -24,7 +24,9 @@ export const load = (async ({ params }) => {
 
     const page = await getModulePage(pageNumber - 1, BLOG_PAGE_SIZE)
     return { 
-        page: page
+        page: page,
+        card: 'bg-about.jpg',
+        cardAlt: `Sun reflecting off a distant coastline, showing bands of bright light against a dark shore.`
     }
 }) satisfies PageLoad;
 

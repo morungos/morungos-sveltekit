@@ -2,6 +2,9 @@
 layout: page
 title: Tiny embedded language models
 card: 'bg-about.jpg'
+card_alt: >
+  Sun reflecting off a distant coastline, showing bands of bright light 
+  against a dark shore.
 ---
 
 I'd been working for a while supporting some real-time embedded development

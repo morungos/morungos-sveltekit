@@ -3,6 +3,9 @@ layout: page
 title: 'Heliotrope and cBioPortal'
 subtitle: 'Translational bioinformatics in clinical research'
 card: 'bg-about.jpg'
+card_alt: >
+  Sun reflecting off a distant coastline, showing bands of bright light 
+  against a dark shore.
 ---
 
 One field I particularly enjoyed working in was translational bioinformatics. I

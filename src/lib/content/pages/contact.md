@@ -1,6 +1,9 @@
 ---
 title: Contact me
 card: 'bg-contact.jpg'
+card_alt: >
+  Sun reflecting off a distant coastline, showing bands of bright light 
+  against a dark shore.
 ---
 
 Want to get in touch? Contact me by

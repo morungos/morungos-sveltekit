@@ -9,8 +9,14 @@ accept them.
 -->
 
 <script lang="ts">
-let { title, card } = $props();
 import { modules } from '$lib/collections/cards'
+
+let { 
+    title, card, cardAlt }: {
+    title: string, 
+    card: string, 
+    cardAlt: string 
+} = $props();
 
 function getCard(card: string) {
     const cardData = modules[card ?? 'bg-about.jpg']
@@ -50,7 +56,7 @@ const cardData = $derived(getCard(card))
 </svelte:head>
 
 <header class="masthead-wrapper" id="menu">
-    <enhanced:img src={ cardData } alt="An alt text" />
+    <enhanced:img src={ cardData } alt={ cardAlt } />
     <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">

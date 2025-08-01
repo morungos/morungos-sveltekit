@@ -1,6 +1,9 @@
 ---
 title: About Stuart
 card: 'bg-about.jpg'
+card_alt: >
+  Sun reflecting off a distant coastline, showing bands of bright light 
+  against a dark shore.
 description: >-
   Dr Stuart Watt is a consulting developer who loves the challenges of
   transforming rough ideas and hard problems into well-engineered technology. 

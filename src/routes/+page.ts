@@ -1,5 +1,4 @@
-import { pathToParams } from "$lib/collections/pages";
-import { getModulePage, pathToURL } from "$lib/collections/posts";
+import { getModulePage } from "$lib/collections/posts";
 import type { PageLoad } from "./$types";
 
 export const prerender = true;
@@ -15,6 +14,7 @@ export const load = (async ({ _params }) => {
     return { 
         title: "Building technology with craft",
         card: "bg-index.jpg",
+        cardAlt: "A moody sunset scene of a sandy beach",
         posts: page
     };
 }) satisfies PageLoad;

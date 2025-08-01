@@ -4,6 +4,7 @@ export type ContentFrontMatter = {
 	id: string,
 	title?: string;
 	card?: string;
+	card_alt?: string;
 	description?: string;
 	author?: string;
 	words?: number;

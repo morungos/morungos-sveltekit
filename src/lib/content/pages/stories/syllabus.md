@@ -2,6 +2,9 @@
 layout: page
 title: Syllabus
 card: 'bg-about.jpg'
+card_alt: >
+  Sun reflecting off a distant coastline, showing bands of bright light 
+  against a dark shore.
 ---
 
 Syllabus was an early use of artificial intelligence to solve a hard 

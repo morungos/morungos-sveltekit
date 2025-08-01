@@ -8,6 +8,9 @@ summary: >-
   to build objects in the manner of Slow AI, that help reflect on our use of
   language.
 card: 'IMG_1141.jpg'
+card_alt: >
+  Electronic equipment, as a small piece of "breadboard" with a mass of 
+  coloured wires to an e-paper display.
 image: '/img/pages/IMG_1141.jpeg'
 image_description: 'A small assembly of wires an an e-ink display showing an imaginary quotation'
 ---

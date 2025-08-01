@@ -18,11 +18,13 @@ export const load = (async () => {
     const layoutData: {
         slugList: Array<{slug: string}>,
         card: string,
+        cardAlt: string,
         title?: string,
         description?: string
     } = { 
         slugList,
         card: 'bg-about.jpg',
+        cardAlt: 'Generic image description',
     };
 
 	return layoutData;

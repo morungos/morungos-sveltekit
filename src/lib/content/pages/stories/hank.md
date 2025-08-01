@@ -2,6 +2,9 @@
 layout: page
 title: 'Hank: a visual modelling language'
 card: 'bg-about.jpg'
+card_alt: >
+  Sun reflecting off a distant coastline, showing bands of bright light 
+  against a dark shore.
 ---
 
 ## Cognitive modelling

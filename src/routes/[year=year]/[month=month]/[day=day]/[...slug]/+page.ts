@@ -21,7 +21,8 @@ export const load = (async ({ params }) => {
         component, 
         frontmatter,
         title: frontmatter.title,
-		card: frontmatter.card
+		card: frontmatter.card,
+		cardAlt: frontmatter.card_alt
     };
 }) satisfies PageLoad;
 
