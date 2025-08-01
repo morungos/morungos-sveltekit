@@ -13,6 +13,7 @@ export default defineConfig({
 		frontMatterCompleter(),
 		svelteMd({
 			headId: 'id',
+			headEnabled: false,
 			markdownItOptions: {
 				typographer: true
 			},
