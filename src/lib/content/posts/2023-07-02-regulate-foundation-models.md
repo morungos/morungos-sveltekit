@@ -2,7 +2,7 @@
 layout: post
 title: 'Cheese and the latent harms of foundation models'
 author: Stuart
-background: 'cheese_PNG7.png'
+card: 'cheese_PNG7.png'
 summary: >-
   Has OpenAI has consciously planned
   its go-to-market strategy as a means to offload risks onto 

@@ -32,7 +32,7 @@ import { page } from '$app/state';
 </svelte:head>
 
 <Navigation />
-<Masthead background={ page.data.background} title={ page.data.title} />
+<Masthead card={ page.data.card} title={ page.data.title} />
 <div class="container">
 	<div class="flex flex-col md:flex-row">
 		<div class="overflow-y-scroll w-full md:h-screen scrollbar-transparent">

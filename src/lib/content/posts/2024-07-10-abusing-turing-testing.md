@@ -2,7 +2,7 @@
 layout: post
 title: 'Misusing Turing for profit: 7 deadly sins of Turing tests in industry'
 author: Stuart
-background: '48349530722_4b0e1706ac_k.jpg'
+card: '48349530722_4b0e1706ac_k.jpg'
 summary: >-
   How does the Turing test work? Well, it isn't a definition of intelligence. It
   is rooted in cybernetics, and explores the differences between machines and people.

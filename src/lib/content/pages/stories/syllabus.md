@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Syllabus
-background: 'bg-about.jpg'
+card: 'bg-about.jpg'
 ---
 
 Syllabus was an early use of artificial intelligence to solve a hard 

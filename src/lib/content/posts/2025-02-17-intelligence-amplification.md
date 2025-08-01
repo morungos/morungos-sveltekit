@@ -2,7 +2,7 @@
 layout: post
 title: "LLMs: intelligence amplification doesn't work on stupid people"
 author: Stuart
-background: 'kearney-lake.jpg'
+card: 'kearney-lake.jpg'
 summary: >-
   Giving a fool a large language model simply makes them faster
   at their foolishness, it does not make them equal to 

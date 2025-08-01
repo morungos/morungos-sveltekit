@@ -7,7 +7,7 @@ summary: >-
   An exploration of tiny embedded language models, and how we can use them
   to build objects in the manner of Slow AI, that help reflect on our use of
   language.
-background: 'IMG_1141.jpg'
+card: 'IMG_1141.jpg'
 image: '/img/pages/IMG_1141.jpeg'
 image_description: 'A small assembly of wires an an e-ink display showing an imaginary quotation'
 ---

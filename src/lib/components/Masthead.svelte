@@ -9,15 +9,15 @@ accept them.
 -->
 
 <script lang="ts">
-let { title, background } = $props();
+let { title, card } = $props();
 import { modules } from '$lib/collections/cards'
 
-function getCard(background: string) {
-    const card = modules[background ?? 'bg-about.jpg']
-    if (! card) {
-        throw new Error("Missing background: " + background)
+function getCard(card: string) {
+    const cardData = modules[card ?? 'bg-about.jpg']
+    if (! cardData) {
+        throw new Error("Missing card: " + card)
     }
-    return card
+    return cardData
 }
 
 function getCardImageURL(card: any): string {
@@ -42,15 +42,15 @@ function getCardImageURL(card: any): string {
 }
 
 
-const card = $derived(getCard(background))
+const cardData = $derived(getCard(card))
 </script>
 
 <svelte:head>
-    <meta property="og:image" content={ getCardImageURL(card) } />
+    <meta property="og:image" content={ getCardImageURL(cardData) } />
 </svelte:head>
 
 <header class="masthead-wrapper" id="menu">
-    <enhanced:img src={ card } alt="An alt text" />
+    <enhanced:img src={ cardData } alt="An alt text" />
     <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">

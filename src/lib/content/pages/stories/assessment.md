@@ -1,6 +1,6 @@
 ---
 title: AI and technology for assessment in higher education
-background: 'bg-about.jpg'
+card: 'bg-about.jpg'
 ---
 
 When I worked in academia, one of the areas I was early involved with

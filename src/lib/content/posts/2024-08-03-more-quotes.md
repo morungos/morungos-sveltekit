@@ -2,7 +2,7 @@
 layout: post
 title: 'Engines of rhetoric: the true nature of artificial intelligence'
 author: Stuart
-background: 'inspirational-quote.jpg'
+card: 'inspirational-quote.jpg'
 summary: >-
   Inspirational quotes are a distinctive genre of text, with a strongly rhetorical
   twist -- that makes them perfect for assessing AI's ability to model the form of texts. 

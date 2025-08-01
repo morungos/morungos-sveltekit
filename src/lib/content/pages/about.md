@@ -1,6 +1,6 @@
 ---
 title: About Stuart
-background: 'bg-about.jpg'
+card: 'bg-about.jpg'
 description: >-
   Dr Stuart Watt is a consulting developer who loves the challenges of
   transforming rough ideas and hard problems into well-engineered technology. 

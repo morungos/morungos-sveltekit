@@ -2,7 +2,7 @@
 layout: post
 title: 'Risky business: fear of AGI for fun and profit'
 author: Stuart
-background: 'monopoly-2636268_1920.jpg'
+card: 'monopoly-2636268_1920.jpg'
 summary: >-
   A short article on the fear business around artificial intelligence
   and AGI, with significant underpinnings from Ulrich Beck's "risk society" theory

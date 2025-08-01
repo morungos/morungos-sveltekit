@@ -1,6 +1,6 @@
 ---
 title: Contact me
-background: 'bg-contact.jpg'
+card: 'bg-contact.jpg'
 ---
 
 Want to get in touch? Contact me by

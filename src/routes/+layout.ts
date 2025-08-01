@@ -17,12 +17,12 @@ export const load = (async () => {
 
     const layoutData: {
         slugList: Array<{slug: string}>,
-        background: string,
+        card: string,
         title?: string,
         description?: string
     } = { 
         slugList,
-        background: 'bg-about.jpg',
+        card: 'bg-about.jpg',
     };
 
 	return layoutData;

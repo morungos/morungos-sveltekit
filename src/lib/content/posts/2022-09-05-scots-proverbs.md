@@ -2,7 +2,7 @@
 layout: post
 title: 'Announcing @ScotsProverbBot: AI for Scots proverbs'
 author: Stuart
-background: 'slidey0131.jpg'
+card: 'slidey0131.jpg'
 summary: >-
   A new Twitter bot, to generate Scots proverbs.
 excerpt: |-
