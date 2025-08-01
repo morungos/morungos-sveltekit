@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript word-extractor package release 1.0
 author: Stuart
-background: '/img/posts/emigrant.jpg'
+background: 'emigrant.jpg'
 summary: >-
   Announcing a major update to my Node.js module which extracts text
   from Word files. This new version also extracts text from newer "docx"

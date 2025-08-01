@@ -2,7 +2,7 @@
 layout: post
 title: 'Intellectual property and feudalism'
 author: Stuart
-background: '/img/posts/Reeve_and_Serfs.jpg'
+background: 'Reeve_and_Serfs.jpg'
 summary: >-
   Is the concept of intellectual property implicitly forcing us to apply a feudal
   style of ownership to ideas? And if so, what does this mean for society and the

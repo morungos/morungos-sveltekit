@@ -2,7 +2,7 @@
 layout: post
 title: 'How to test your kitten'
 author: Stuart
-background: '/img/posts/kittens.jpeg'
+background: 'kittens.jpg'
 summary: >-
   How do we build ways to think about what's going on inside a really
   complex system, such as a large language model or a kitten?

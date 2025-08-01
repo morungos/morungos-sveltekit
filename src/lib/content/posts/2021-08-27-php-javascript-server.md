@@ -2,7 +2,7 @@
 layout: post
 title: A proxy server for developing and debugging PHP apps under FPM
 author: Stuart
-background: '/img/posts/angry-cat-laptop.jpg'
+background: 'angry-cat-laptop.jpg'
 summary: >-
   Running a test server for PHP is not always easy, and there are a few 
   technical hurdles. Here's how I did it.

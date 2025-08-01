@@ -75,7 +75,7 @@ const card = $derived(getCard(background))
 }
 
 .masthead-heading h1 {
-    font-size: 48px;
+    font-size: 40px;
     margin-top: 20px;
     min-height: 60px;
 }

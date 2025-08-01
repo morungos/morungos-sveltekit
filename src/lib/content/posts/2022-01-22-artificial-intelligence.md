@@ -2,7 +2,7 @@
 layout: post
 title: 'Artificial intelligence: Big Science, bricolage, and beyond'
 author: Stuart
-background: '/img/posts/complex-clock.jpg'
+background: 'complex-clock.jpg'
 summary: >-
   Does Big Science break the way we collaborate in artificial intelligence? Yes,
   it excludes the bricoleurs, the explorers, who are building the next generation of breakthroughs

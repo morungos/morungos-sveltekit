@@ -2,7 +2,7 @@
 layout: post
 title: 'Silicon Valley and Political Rationalism'
 author: Stuart
-background: '/img/posts/negative0304.jpg'
+background: 'negative0304.jpg'
 summary: >-
   Rationalism today, at least in Silicon Valley, is not your grandmother's 
   rationalism.

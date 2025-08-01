@@ -2,7 +2,7 @@
 layout: post
 title: Generative language models and bias, or, does John give a fuck?
 author: Stuart
-background: '/img/posts/scrabble-swearing.jpg'
+background: 'scrabble-swearing.jpg'
 summary: >-
   How do temperature, top-p, and top-k influence the typicality
   and bias in a generative language model?
