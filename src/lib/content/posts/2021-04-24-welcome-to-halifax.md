@@ -34,7 +34,7 @@ chatter at you if you infringe on their little territories while they stuff nuts
 little mouths.
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/white-tailed-deer.jpg" alt="White-tailed deer"></enhanced:img>
+  <enhanced:img src="$lib/assets/posts/white-tailed-deer.jpg" alt="White-tailed deer"></enhanced:img>
   <figcaption>Some of our visiting white-tailed deer, seen from our back window</figcaption>
 </figure>
 

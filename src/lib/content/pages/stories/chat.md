@@ -27,7 +27,7 @@ And this is what it looked like, on one of our test pages.
 
 <figure class="figure">
   <enhanced:img 
-    src="/src/images/pages/flow-regular-5.png" 
+    src="$lib/assets/pages/flow-regular-5.png" 
     alt="Screenshot of chat component in use"></enhanced:img>
 
   <figcaption class="figure-caption">Screenshot of chat component in use</figcaption>

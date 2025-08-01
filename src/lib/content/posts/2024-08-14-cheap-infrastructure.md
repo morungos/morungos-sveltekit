@@ -111,7 +111,7 @@ have built our own load balancer, but Digital Ocean's cost the same as two nodes
 anyway, so it would not have saved us all that much.
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/cluster-architecture.png" 
+  <enhanced:img src="$lib/assets/posts/cluster-architecture.png" 
        alt="Chart of bias effects by temperature"></enhanced:img>
     <figcaption class="figure-caption">
     Overview of the basic cluster architecture.

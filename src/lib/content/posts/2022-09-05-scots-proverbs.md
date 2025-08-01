@@ -137,17 +137,17 @@ I will be applying some manual moderation, at least to start with -- not to sele
 the best, but to be sure we don't break any rules with anything too naughty.
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/22ead4c162e75575ccaed5c571cfac69b543d8da.jpg" alt="He that leaves a wife wi' the bairns be wise what ye break a man"></enhanced:img>
+  <enhanced:img src="$lib/assets/posts/22ead4c162e75575ccaed5c571cfac69b543d8da.jpg" alt="He that leaves a wife wi' the bairns be wise what ye break a man"></enhanced:img>
   <figcaption>He that leaves a wife wi' the bairns be wise what ye break a man</figcaption>
 </figure>
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/36333ef1e102420d6cd5673b4f1247dca29e43ef.jpg" alt="Ye're a pudding to his foot o' an ill fool"></enhanced:img>
+  <enhanced:img src="$lib/assets/posts/36333ef1e102420d6cd5673b4f1247dca29e43ef.jpg" alt="Ye're a pudding to his foot o' an ill fool"></enhanced:img>
   <figcaption>Ye're a pudding to his foot o' an ill fool</figcaption>
 </figure>
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/5ada0cc1c48581a1192a74b83a261e0fa5d51b09.jpg" alt="He wha was better than my shoon than a cow o’ your meat"></enhanced:img>
+  <enhanced:img src="$lib/assets/posts/5ada0cc1c48581a1192a74b83a261e0fa5d51b09.jpg" alt="He wha was better than my shoon than a cow o’ your meat"></enhanced:img>
   <figcaption>He wha was better than my shoon than a cow o’ your meat</figcaption>
 </figure>
 

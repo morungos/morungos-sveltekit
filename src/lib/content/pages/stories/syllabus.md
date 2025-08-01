@@ -74,7 +74,7 @@ to explain to one customer how to use a mouse to move files around, all
 over a phone call without being able to see the screen.
 
 <figure class="figure">
-  <enhanced:img src="/src/images/pages/syllabus-1.png" 
+  <enhanced:img src="$lib/assets/pages/syllabus-1.png" 
        alt="Screen display of very early Syllabus timetabling screen">
     <figcaption class="figure-caption">
     Screen display of very early Syllabus timetabling screen. Note that

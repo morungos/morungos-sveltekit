@@ -61,7 +61,7 @@ attempt to detect and resolve as many risks as possible early, and to manage som
 model itself. And with decent testing, it may do a decent job for many cases.
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/swiss-cheese-model.png" style="width: 400px;"
+  <enhanced:img src="$lib/assets/posts/swiss-cheese-model.png" style="width: 400px;"
        alt="The Swiss Cheese Model"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 1. A depiction of how application and model layers of protection together mitigate risks in an AI application using a foundation model
@@ -111,7 +111,7 @@ onto application developers, it even limits their ability to test, because so
 many latent failures may be simply unknown to them. 
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/swiss-cheese-model-boxed.png" style="width: 400px;"
+  <enhanced:img src="$lib/assets/posts/swiss-cheese-model-boxed.png" style="width: 400px;"
        alt="The Swiss Cheese Model"></enhanced:img>
     <figcaption class="figure-caption">
         Figure 2. Application and model layers of protection together mitigate risks in an AI application using a foundation model, with less transparency over the model layer

@@ -93,7 +93,7 @@ we start to adjust our parameters. To measure these, I generated 100000 names
 with each setting, and count the number of Johns.
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/ai-chart-1.png" 
+  <enhanced:img src="$lib/assets/posts/ai-chart-1.png" 
        alt="Chart of bias effects by temperature">
     <figcaption class="figure-caption">
     Shows the effect of temperature on the percentage of Johns and number 
@@ -114,7 +114,7 @@ temperature gets to 0.1, virtually every single generated name is a John.
 They're all Johns. 
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/johns.gif" alt="They're all John"></enhanced:img>
+  <enhanced:img src="$lib/assets/posts/johns.gif" alt="They're all John"></enhanced:img>
   <figcaption class="figure-caption">
     They're all Johns, thanks to the miracle of cloning.
   </figcaption>
@@ -123,7 +123,7 @@ They're all Johns.
 And there's a similar effect for top-p. 
 
 <figure class="figure">
-  <enhanced:img src="/src/images/posts/ai-chart-2.png" 
+  <enhanced:img src="$lib/assets/posts/ai-chart-2.png" 
        alt="Chart of bias effects by top p"></enhanced:img>
   <figcaption class="figure-caption">
     Shows the effect of top-p on the percentage of Johns and number 

@@ -30,7 +30,7 @@ data a little like a relational database, and 'instruction cards' that set out
 the steps followed by a process. The result looked a little like this:
 
 <figure class="figure">
-  <enhanced:img src="/src/images/pages/hank-1.png" 
+  <enhanced:img src="$lib/assets/pages/hank-1.png" 
        alt="Screen display of a relatively complex model in Hank">
     <figcaption class="figure-caption">
     Screen display of a relatively complex model in Hank, for the Towers of

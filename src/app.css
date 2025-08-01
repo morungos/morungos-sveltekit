@@ -105,6 +105,10 @@ hr.separator {
     padding-right: 15px;
 }
 
+figure {
+    margin: 1em 0;
+}
+
 .figure img {
     width: 75%;
     height: auto;
@@ -116,4 +120,22 @@ hr.separator {
 figcaption {
     text-align: center;
     font-weight: 600;
+}
+
+.markdown-body figure video, figure.figure video { 
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.markdown-body figure img, figure.figure img { 
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 0.75em;
 }

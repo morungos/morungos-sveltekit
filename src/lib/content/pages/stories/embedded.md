@@ -18,7 +18,7 @@ So I decided to make a small device which could generate and display inspiration
 quotes in an e-ink display, using a couple of small language models. 
 
 <figure class="figure">
-  <enhanced:img src="/src/images/pages/IMG_1141.jpg" 
+  <enhanced:img src="$lib/assets/pages/IMG_1141.jpg" 
        alt="Chart of bias effects by temperature"></enhanced:img>
     <figcaption class="figure-caption">
     The hardware implementation, showing a Raspberry Pico microcontroller 
@@ -135,7 +135,7 @@ of the models, but so far it's proven something of a challenge to make it work w
 ONNX well enough to get good quotes. 
 
 <figure class="figure">
-  <enhanced:img src="/src/images/pages/IMG_1169.jpg" 
+  <enhanced:img src="$lib/assets/pages/IMG_1169.jpg" 
        alt="Chart of bias effects by temperature"></enhanced:img>
     <figcaption class="figure-caption">
     One of the generated quotes, on the e-ink display
@@ -157,7 +157,7 @@ and the process I used, read this
 article*](/2022/09/05/scots-proverbs/))
 
 <figure class="figure">
-  <enhanced:img csrc="/src/images/pages/scots-proverb-1.png" 
+  <enhanced:img csrc="$lib/assets/pages/scots-proverb-1.png" 
        alt="AI generated Scots proverb against a moody mountainside loch with low cloud. “The wird o’ the hand is worth a bind o’ the wind”"></enhanced:img>
     <figcaption class="figure-caption">
     An automatically generated random Scots proverb, generated using another
