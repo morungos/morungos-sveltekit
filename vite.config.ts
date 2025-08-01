@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import svelteMd from "vite-plugin-svelte-md";
 import mdFootnotes from 'markdown-it-footnote';
 import mdAnchors from 'markdown-it-anchor';
+import mdAttrs from 'markdown-it-attrs';
 import { stripEmptyScripts } from './etc/strip-empty.js';
 import { frontMatterCompleter } from './etc/front-matter.js';
 import type { PluginOption } from 'vite';
@@ -17,7 +18,7 @@ export default defineConfig({
 			markdownItOptions: {
 				typographer: true
 			},
-			markdownItUses: [mdFootnotes, mdAnchors]
+			markdownItUses: [mdFootnotes, mdAnchors, mdAttrs]
 		}) as PluginOption,
 		enhancedImages(),
 		stripEmptyScripts(),
