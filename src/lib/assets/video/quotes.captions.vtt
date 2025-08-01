@@ -1,0 +1,19 @@
+WEBVTT
+
+NOTE This is a multi-line note block.
+These are used for comments by the author
+Two cue blocks are defined below.
+
+00:01.000 --> 00:04.000
+<i>a microcontroller and 
+an e-ink screen</i>
+
+00:07.000 --> 00:12.000
+<i>screen flashing</i>
+
+00:15.000 --> 00:18.000
+<i>Screen reads:</i>
+"We cannot be developed in life, 
+and which is good and depend on with 
+happiness and the power of failure
+in progress" Brian Wood
