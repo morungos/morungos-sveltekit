@@ -3,12 +3,11 @@ layout: post
 title: 'Cheese and the latent harms of foundation models'
 author: Stuart
 card: 'cheese_PNG7.png'
+card_alt: "Slices of Swiss cheese"
 summary: >-
   Has OpenAI has consciously planned
   its go-to-market strategy as a means to offload risks onto 
   developers?
-image: '/img/posts/cheese_PNG7.png'
-image_description: "Slices of Swiss cheese"
 ---
 
 At first glance, frameworks like the [EU AI Act](https://www.reuters.com/technology/what-is-european-union-ai-act-2023-03-22/) put the primary burden of regulation

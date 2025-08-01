@@ -2,13 +2,12 @@
 layout: post
 title: 'How to test your kitten'
 author: Stuart
-backcardground: 'kittens.jpg'
+card: 'kittens.jpg'
+card_alt: |-
+  Two small kittens, one black and white, the other a grey tabby, cuddling each other.
 summary: >-
   How do we build ways to think about what's going on inside a really
   complex system, such as a large language model or a kitten?
-image: '/img/posts/kittens.jpeg'
-image_description: |-
-  Two small kittens, one black and white, the other a grey tabby, cuddling each other.
 ---
 
 I have spent a fabulous couple of days at [a workshop on AI and testing run by

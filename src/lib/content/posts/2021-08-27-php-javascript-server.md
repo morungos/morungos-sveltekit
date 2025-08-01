@@ -3,11 +3,12 @@ layout: post
 title: A proxy server for developing and debugging PHP apps under FPM
 author: Stuart
 card: 'angry-cat-laptop.jpg'
+card_alt: >
+  A cat with dark head and paws, sitting on a open laptop, with its mouth open
+  in an angry growling and hissing.
 summary: >-
   Running a test server for PHP is not always easy, and there are a few 
   technical hurdles. Here's how I did it.
-image: '/img/posts/angry-cat-laptop.jpg'
-image_description: "An angry cat sitting on a laptop"
 ---
 
 As we work through a number of improvements on [Meet-O-Matic](https://meetomatic.com),

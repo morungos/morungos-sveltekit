@@ -3,13 +3,10 @@ layout: post
 title: 'Risky business: fear of AGI for fun and profit'
 author: Stuart
 card: 'monopoly-2636268_1920.jpg'
+card_alt: "A Canadian monopoly set, with dice and cards"
 summary: >-
   A short article on the fear business around artificial intelligence
   and AGI, with significant underpinnings from Ulrich Beck's "risk society" theory
-excerpt: |-
-  
-image: '/img/posts/monopoly-2636268_1920.jpg'
-image_description: "A Canadian monopoly set, with dice and cards"
 ---
 <svelte:head><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></svelte:head>
 

@@ -3,15 +3,14 @@ layout: post
 title: 'Intellectual property and feudalism'
 author: Stuart
 card: 'Reeve_and_Serfs.jpg'
+card_alt: |-
+  Medieval illustration of men harvesting wheat with reaping-hooks
+  or sickles, on a calendar page for August. Queen Mary's Psalter 
+  (Ms. Royal 2. B. VII), fol. 78v
 summary: >-
   Is the concept of intellectual property implicitly forcing us to apply a feudal
   style of ownership to ideas? And if so, what does this mean for society and the
   greater good?
-image: '/img/posts/Reeve_and_Serfs.jpg'
-image_description: |-
-  Medieval illustration of men harvesting wheat with reaping-hooks
-  or sickles, on a calendar page for August. Queen Mary's Psalter 
-  (Ms. Royal 2. B. VII), fol. 78v
 ---
 
 **Is the concept of intellectual property implicitly forcing us to apply a *feudal*

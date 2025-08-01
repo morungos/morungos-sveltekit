@@ -3,11 +3,12 @@ layout: post
 title: 'Artificial intelligence: Big Science, bricolage, and beyond'
 author: Stuart
 card: 'complex-clock.jpg'
+card_alt: >
+  A large and extremely ornate pattern of concentric coloured tile patterns,
+  mainly in blues, reds and orange, looking almost like a machine wheel made from fancy fractal Lego.
 summary: >-
   Does Big Science break the way we collaborate in artificial intelligence? Yes,
   it excludes the bricoleurs, the explorers, who are building the next generation of breakthroughs
-image: '/img/posts/complex-clock.jpg'
-image_description: "A complex fractal clock image"
 ---
 
 _[This article is also available as a PDF](/assets/artificial-intelligence-big-science.pdf)_

@@ -3,6 +3,9 @@ layout: post
 title: Punching out artificial intelligence
 author: Stuart
 card: 'punch-and-policeman.jpg'
+card_alt: >
+  A puppet of Mr Punch about to wallop a puppet of the Policeman 
+  with an extremely large stick.
 summary: >-
   Artificial intelligence has a power problem, and we need to think of it
   as a trickster character, one that can cause chaos and abuse, but —

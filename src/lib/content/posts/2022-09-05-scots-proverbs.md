@@ -3,12 +3,9 @@ layout: post
 title: 'Announcing @ScotsProverbBot: AI for Scots proverbs'
 author: Stuart
 card: 'slidey0131.jpg'
+card_alt: "A lovely mountainous landscape in Scotland, crags in front, looking down to buildings on a lochside in the distance"
 summary: >-
   A new Twitter bot, to generate Scots proverbs.
-excerpt: |-
-  
-image: '/img/posts/slidey0131.jpg'
-image_description: "A lovely mountainous landscape in Scotland, crags in front, looking down to buildings on a lochside in the distance"
 ---
 
 For quite some time, I've been fascinated by the language of inspirational quotes

@@ -3,6 +3,9 @@ layout: post
 title: Welcome to Halifax
 author: Stuart
 card: 'kearney-lake.jpg'
+card_alt: >
+  A very small bay in a rocky shoreline in front of a wooded lake,
+  seen on a beautiful sunny day. 
 summary: >-
   Hey, I moved to Nova Scotia
 ---

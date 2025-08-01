@@ -3,14 +3,11 @@ layout: post
 title: 'Something must be done about AI: availability cascades and existential risk'
 author: Stuart
 card: 'IMG_6794.jpg'
+card_alt: "Cascade on the River Etherow"
 summary: >-
   "Existential risk" in artificial intelligence is an exemplary example of
   an availability cascade, a special kind of viral phenomenon driven by strategic 
   manipulation, and with a real risk of pointless and expensive regulation.
-excerpt: |-
-  
-image: '/img/posts/IMG_6794.jpeg'
-image_description: "Cascade on the River Etherow"
 ---
 <svelte:head><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></svelte:head>
 

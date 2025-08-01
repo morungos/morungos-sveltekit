@@ -3,13 +3,12 @@ layout: post
 title: 'Misusing Turing for profit: 7 deadly sins of Turing tests in industry'
 author: Stuart
 card: '48349530722_4b0e1706ac_k.jpg'
+card_alt: |-
+  A mural of Alan Turing
 summary: >-
   How does the Turing test work? Well, it isn't a definition of intelligence. It
   is rooted in cybernetics, and explores the differences between machines and people.
   Here are some of the many ways it can go wrong.
-image: '/img/posts/48349530722_4b0e1706ac_k.jpg'
-image_description: |-
-  A mural of Alan Turing
 ---
 
 Okay, I've just about had it with folks in today's artificial intelligence community misusing the Turing test.

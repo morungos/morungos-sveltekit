@@ -3,11 +3,11 @@ layout: post
 title: Turalt's new application infrastructure
 author: Stuart
 card: 'oakwood-station-construction.jpg'
+card_alt: >
+  A cement mixer and a bridge crane engaged in heavy construction work.
 summary: >-
   We've updated our server platform to make it smaller,
   simpler, and easier to manage -- and save us money. This is how we did it.
-image: '/img/posts/oakwood-station-construction.jpg'
-image_description: 'Construction cranes at Oakwood station on the new Eglinton line'
 ---
 
 We've recently updated our server platform at Turalt to a new approach, to make it smaller,

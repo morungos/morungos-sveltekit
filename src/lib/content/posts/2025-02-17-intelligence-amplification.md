@@ -3,13 +3,12 @@ layout: post
 title: "LLMs: intelligence amplification doesn't work on stupid people"
 author: Stuart
 card: 'kearney-lake.jpg'
+card_alt: |-
+  A small forested lake, surrounded by scrubland.
 summary: >-
   Giving a fool a large language model simply makes them faster
   at their foolishness, it does not make them equal to 
   a skilled or experienced person.
-image: '/img/posts/kearney-lake.jpg'
-image_description: |-
-  A small forested lake, surrounded by scrubland.
 ---
 <svelte:head><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script></svelte:head>
 

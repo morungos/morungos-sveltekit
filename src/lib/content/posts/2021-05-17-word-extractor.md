@@ -3,13 +3,14 @@ layout: post
 title: JavaScript word-extractor package release 1.0
 author: Stuart
 card: 'emigrant.jpg'
+card_alt: >
+  Bronze statue, life-sized, of a man leaving his home country with a suitcase
+  in hand while his family wait on his return. Artwork by Armando Barbon, 
+  Port of Halifax, Nova Scotia
 summary: >-
   Announcing a major update to my Node.js module which extracts text
   from Word files. This new version also extracts text from newer "docx"
   format files.
-image: '/img/posts/emigrant.jpg'
-image_description: "The Emigrant by Armando Barbon, Port of Halifax, Nova Scotia"
-excerpt_separator: "<!-- more -->"
 ---
 
 I've just released version 1.0 of [my JavaScript module for reading text 

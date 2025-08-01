@@ -3,12 +3,9 @@ layout: post
 title: 'Artificial Intelligence: A Very Capitalist Risk'
 author: Stuart
 card: 'ultraviolet.jpg'
+card_alt: "A scene from Ultraviolet, the British TV series, showing a vampire looking in a mirrored window, and seeing everything but himself"
 summary: >-
   What if artificial intelligence meant that a technological elite could dispose of humanity
-excerpt: |-
-  
-image: '/img/posts/ultraviolet.jpg'
-image_description: "A scene from Ultraviolet, the British TV series, showing a vampire looking in a mirrored window, and seeing everything but himself"
 ---
 
 One of my favourite takes on the traditional 'vampire' concept was Joe Aherne's British TV

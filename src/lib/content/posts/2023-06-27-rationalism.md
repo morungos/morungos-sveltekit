@@ -3,11 +3,10 @@ layout: post
 title: 'Silicon Valley and Political Rationalism'
 author: Stuart
 card: 'negative0304.jpg'
+card_alt: "Figure walking under double rainbow"
 summary: >-
   Rationalism today, at least in Silicon Valley, is not your grandmother's 
   rationalism.
-image: '/img/posts/negative0304.jpg'
-image_description: "Figure walking under double rainbow"
 ---
 
 ## Classical and Silicon Valley rationalism

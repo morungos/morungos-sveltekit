@@ -3,11 +3,12 @@ layout: post
 title: Generative language models and bias, or, does John give a fuck?
 author: Stuart
 card: 'scrabble-swearing.jpg'
+card_alt: >
+  Four Scrabble letters on a wooden table, spelling a word, 
+  the tiles are F, blank, C, and K.
 summary: >-
   How do temperature, top-p, and top-k influence the typicality
   and bias in a generative language model?
-image: '/img/posts/scrabble-swearing.jpg'
-image_description: "A rude word in Scrabble"
 ---
 
 I've been working on a small language model for a project, and it's a 
