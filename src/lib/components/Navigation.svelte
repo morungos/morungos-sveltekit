@@ -11,7 +11,7 @@ function onclick() {
     <div class="container navbar-body">
         <div class="navbar-flex">
             <div class="pure-menu">
-                <a href="/" class="pure-menu-item pure-menu-link navbar-brand" onclick={onclick}>Stuart Watt</a>
+                <a href="/" class="pure-menu-link navbar-brand" onclick={onclick}>Stuart Watt</a>
                 <button class="navbar-toggle" aria-label="Toggle menu"
                         onclick={() => open = !open}>
                     <s class="navbar-toggle-icon"></s>
@@ -42,7 +42,6 @@ function onclick() {
     left: 0;
     right: 0;
     -webkit-font-smoothing: antialiased;
-    background-color: white;
 }
 
 .navbar-wrapper .pure-menu-item {
@@ -50,11 +49,11 @@ function onclick() {
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
-    color: #0085A1;
+    color: #222;
 }
 .navbar-brand {
     font-weight: 800;
-    color: #212529;
+    color: #fff;
 }
 
 .navbar-flex {
@@ -68,6 +67,21 @@ function onclick() {
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+.navbar-item {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-item a {
+    color: #fff;
+}
+
+.navbar-item a:focus, .navbar-item a:hover {
+    color: #222;
+    background-color: rgba(250, 250, 250, 0.85);
 }
 
 .navbar-menu-items .pure-menu-list {
@@ -127,6 +141,18 @@ function onclick() {
     }
     .navbar-toggle {
         display: block;
+    }
+    .navbar-wrapper {
+        background-color: white;
+    }
+    .navbar-brand {
+        color: #212529;
+    }
+    .navbar-item {
+        color: #222;
+    }
+    .navbar-item a {
+        color: #222
     }
 }
 </style>
