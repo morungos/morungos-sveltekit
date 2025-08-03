@@ -75,7 +75,7 @@ for example, or the creation of collaborative networks.
 | Consequentialist ethics | Virtue ethics |
 | Guided by theory | Guided by experiment |
 
-{.pure-table .pure-table-horizontal}
+[[.pure-table .pure-table-horizontal]]
 
 **Table 1. Characteristics of Big Science and Little Science**
 

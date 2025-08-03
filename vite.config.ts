@@ -16,9 +16,16 @@ export default defineConfig({
 			headId: 'id',
 			headEnabled: false,
 			markdownItOptions: {
-				typographer: true
+				typographer: true,
 			},
-			markdownItUses: [mdFootnotes, mdAnchors, mdAttrs]
+			markdownItUses: [
+				mdFootnotes, 
+				mdAnchors, 
+				[ mdAttrs, {
+					leftDelimiter: '[[',
+					rightDelimiter: ']]',
+				}]
+ 			]
 		}) as PluginOption,
 		enhancedImages(),
 		stripEmptyScripts(),
