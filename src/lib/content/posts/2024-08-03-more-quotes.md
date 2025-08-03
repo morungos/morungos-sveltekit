@@ -3,13 +3,12 @@ layout: post
 title: 'Engines of rhetoric: the true nature of artificial intelligence'
 author: Stuart
 card: 'inspirational-quote.jpg'
+card_alt: |-
+  Inspirational quote: "Whatever you can do or dream you can, begin it.
+  Boldness has genius, power and magic in it" Johann von Goethe
 summary: >-
   Inspirational quotes are a distinctive genre of text, with a strongly rhetorical
   twist -- that makes them perfect for assessing AI's ability to model the form of texts. 
-image: '/img/posts/inspirational-quote.jpeg'
-image_description: |-
-  Inspirational quote: "Whatever you can do or dream you can, begin it.
-  Boldness has genius, power and magic in it" Johann von Goethe
 ---
 
 As those of you I've met in person may know, I've been exploring the use of tiny
