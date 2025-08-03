@@ -139,7 +139,7 @@ about the same kitten.
 | Design stance | e.g., what it does, behaviour, causal inference |
 | Intentional stance | e.g., what it says, communication, common-sense psychology | 
 
-[[.pure-table .pure-table-horizontal]]
+[[.pure-table .pure-table-horizontal .table-responsive]]
 
 But beyond Dennett's philosophy, these are also different ways of framing our
 testing. Each 'stance' is built up of different systems or packages of theories

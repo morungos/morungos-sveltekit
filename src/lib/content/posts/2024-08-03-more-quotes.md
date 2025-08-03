@@ -84,6 +84,8 @@ figure can be used for impact, the various forms of repetition, including
 anaphora, antimetabole, diacope, epistrophe, and epizeuxis, these are all used
 most extensively. Metaphor and simile are also common, as is alliteration.
 
+<div class="table-responsive-wrapper" style="width:600px">
+
 | Device          | Description         | Example quote            |
 |---------------- | ------------------- | ------------------- |
 | Alliteration    | Repeating initial sounds in adjacent words | "Every calm and quiet place is the true temple of the wise man" |
@@ -110,6 +112,8 @@ most extensively. Metaphor and simile are also common, as is alliteration.
 | Simile | Comparing two unlike things, typically using "like" or "as" |  "A conscience is like a baby -- it has to go to sleep before you can" |
 
 [[.pure-table .pure-table-horizontal]]
+
+</div>
 
 **Table 1. Some of the more common rhetorical figures found in inspirational quotes**
 
