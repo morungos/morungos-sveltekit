@@ -51,8 +51,13 @@ analysis, and charting, so that high-quality reports could be produced in
 seconds. We assessed this approach comparing its advantages and disadvantages to
 traditional surveying.
 
+<script lang="ts">
+import preprint from '$lib/assets/pdfs/ECS.d3.pdf?url'
+</script>
+
 > Watt, S. N., Simpson, C., McKillop, C., & Nunn, V. (2002). Electronic course
 > surveys: Does automating feedback and reporting give better results?
 > *Assessment & Evaluation in Higher Education*, *27*(4), 325–337.
 > [https://doi.org/10.1080/0260293022000001346](https://doi.org/10.1080/0260293022000001346)
-> ([*Preprint available here*](/assets/ECS.d3.pdf))
+> (<a href="{ preprint }" download><i>Preprint available here</i></a>)
+

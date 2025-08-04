@@ -81,9 +81,15 @@ focused very explicitly on the experience of the course (rather than
 what you thought of the tutor), because, really, as an institution
 that was what we cared about it.
 
+<script lang="ts">
+import evaluation from '$lib/assets/pdfs/evaluation.pdf?url'
+</script>
+
 You can find the evaluation form here:
 
- * [<b>Evaluation questionnaire</b>](/public/pdf/evaluation.pdf)
+<ul>
+  <li><a href={ evaluation } download><b>Evaluation questionnaire</b></a></li>
+</ul>
 
 I've never formally tested it for validity and reliability, but we used it for
 many years afterwards as the primary evaluation instrument, and all the

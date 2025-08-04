@@ -12,7 +12,7 @@ const config = {
 			strict: false 
 		}),
 		prerender: {
-			handleHttpError: 'warn'
+			handleHttpError: 'fail'
 		}
 	},
 };

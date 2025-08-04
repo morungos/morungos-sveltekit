@@ -11,7 +11,13 @@ summary: >-
   it excludes the bricoleurs, the explorers, who are building the next generation of breakthroughs
 ---
 
-_[This article is also available as a PDF](/assets/artificial-intelligence-big-science.pdf)_
+<script lang="ts">
+import fullVersion from '$lib/assets/pdfs/artificial-intelligence-big-science.pdf?url'
+</script>
+
+<p>
+  <a href={ fullVersion } download><b><i>This article is also available as a PDF</i></b></a>
+</p>
 
 Artificial intelligence is a field with an identity crisis. Despite being
 over sixty years old, it is struggling to establish a coherent self-image.
