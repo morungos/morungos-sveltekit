@@ -30,6 +30,9 @@ import { page } from '$app/state';
 	<!-- <meta name="description" content={data.frontmatter.description} /> -->
 	<meta property="og:locale" content="en_CA" />
 	<meta property="og:site_name" content="Morungos" />
+{#if page.data.description}
+	<meta property="og:description" content={ page.data.description } />
+{/if}
 </svelte:head>
 
 <Navigation />

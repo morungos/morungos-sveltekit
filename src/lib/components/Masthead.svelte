@@ -10,6 +10,7 @@ accept them.
 
 <script lang="ts">
 import { modules } from '$lib/collections/cards'
+import { page } from '$app/state';
 
 let { 
     title, card, cardAlt }: {
@@ -53,6 +54,8 @@ const cardData = $derived(getCard(card))
 
 <svelte:head>
     <meta property="og:image" content={ getCardImageURL(cardData) } />
+    <meta property="og:image:alt" content={ cardAlt } />
+    <meta property="og:url" content={ page.url.toString() } />
 </svelte:head>
 
 <header class="masthead-wrapper" id="menu">
