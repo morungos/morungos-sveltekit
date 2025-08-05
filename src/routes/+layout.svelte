@@ -29,6 +29,7 @@ import { page } from '$app/state';
 	<title>{page.data.title}</title>
 	<!-- <meta name="description" content={data.frontmatter.description} /> -->
 	<meta property="og:locale" content="en_CA" />
+	<meta property="og:site_name" content="Morungos" />
 </svelte:head>
 
 <Navigation />

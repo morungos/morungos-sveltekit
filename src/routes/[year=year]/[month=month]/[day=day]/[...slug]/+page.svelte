@@ -14,6 +14,7 @@ let { data }: Props = $props();
 	<meta name="description" content={ data.frontmatter.description } />
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_CA" />
+	<meta property="og:image" content={ data.frontmatter.card } />
 	{#if data.component.head}
 	{@html data.component.head}
 	{/if}

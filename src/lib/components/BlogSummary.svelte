@@ -1,6 +1,6 @@
 <script lang="ts">
-import type { CollectionItem } from "$lib/types";
-let { post }: { post: CollectionItem } = $props();
+import type { SummaryCollectionItem } from "$lib/types";
+let { post }: { post: SummaryCollectionItem } = $props();
 
 const fm = post.frontmatter
 
@@ -10,7 +10,7 @@ const formatter = new Intl.DateTimeFormat("en-CA", {
     year: 'numeric'
 });
 
-function getPostDate(post: CollectionItem) {
+function getPostDate(post: SummaryCollectionItem) {
     const year = post.params['year']
     const month = post.params['month']
     const day = post.params['day']
