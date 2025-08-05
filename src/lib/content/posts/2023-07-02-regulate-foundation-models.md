@@ -60,14 +60,15 @@ attempt to detect and resolve as many risks as possible early, and to manage som
 model itself. And with decent testing, it may do a decent job for many cases.
 
 <figure class="figure">
-  <enhanced:img src="$lib/assets/posts/swiss-cheese-model.png" style="width: 400px;"
-       alt="The Swiss Cheese Model"></enhanced:img>
+  <enhanced:img
+    src="$lib/assets/posts/swiss-cheese-model.png"
+    alt="The Swiss Cheese Model"></enhanced:img>
     <figcaption class="figure-caption">
     Figure 1. A depiction of how application and model layers of protection together mitigate risks in an AI application using a foundation model
     </figcaption>
 </figure>
 
-Reason’s model separates immediate causes from [latent failures](http://rstb.royalsocietypublishing.org/cgi/doi/10.1098/rstb.1990.0090). 
+Reason’s model separates immediate causes from [latent failures](http://rstb.royalsocietypublishing.org/cgi/doi/10.1098/rstb.1990.0090).
 Immediate causes 
 the risky acts that can be linked directly to a harmful outcome, but not in 
 themselves necessarily harmful. Latent failures -- which can lie hidden 
@@ -110,7 +111,7 @@ onto application developers, it even limits their ability to test, because so
 many latent failures may be simply unknown to them. 
 
 <figure class="figure">
-  <enhanced:img src="$lib/assets/posts/swiss-cheese-model-boxed.png" style="width: 400px;"
+  <enhanced:img src="$lib/assets/posts/swiss-cheese-model-boxed.png"
        alt="The Swiss Cheese Model"></enhanced:img>
     <figcaption class="figure-caption">
         Figure 2. Application and model layers of protection together mitigate risks in an AI application using a foundation model, with less transparency over the model layer
