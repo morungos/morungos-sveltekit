@@ -144,6 +144,11 @@ figcaption {
     overflow-x:auto;
 }
 
+a.morungos-button {
+    background-color: #944444;
+    border-radius: 6px;
+}
+
 @media (max-width: 47.999em) {
     .pure-table td, .pure-table th {
         padding: 0.5em;

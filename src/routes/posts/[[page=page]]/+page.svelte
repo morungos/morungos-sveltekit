@@ -17,12 +17,12 @@ let items = $derived(data.page.items)
 <div class="button-container" class:buttons-right={ ! data.page.hasPrevious }>
     {#if data.page.hasPrevious}
     <a 
-        class="pure-button pure-button-primary" 
+        class="pure-button pure-button-primary morungos-button" 
         href="/posts/page{ data.page.previousPage + 1 }">← Newer<span class="conditional">&nbsp;posts</span></a>
     {/if}
     {#if data.page.hasNext}
     <a 
-        class="pure-button pure-button-primary" 
+        class="pure-button pure-button-primary morungos-button" 
         href="/posts/page{ data.page.nextPage + 1 }">Older<span class="conditional">&nbsp;posts</span> →</a>
     {/if}
 </div>

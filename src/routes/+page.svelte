@@ -40,7 +40,7 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 
 <div class="button-container">
     <div class="buttons">
-        <a class="pure-button pure-button-primary" href="/posts">View All Posts →</a>
+        <a class="pure-button pure-button-primary morungos-button" href="/posts">View All Posts →</a>
     </div>
 </div>
 
