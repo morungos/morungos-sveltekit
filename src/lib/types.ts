@@ -11,9 +11,24 @@ export type ContentFrontMatter = {
 	excerpt?: string;
 };
 
+export type RenderedComponent = {
+	head: string;
+	body: string;
+}
+
+export type LoadedModules = Record<
+	string,
+	() => Promise<{ 
+		default: Component; 
+		frontmatter: ContentFrontMatter
+	}>
+>;
+
 export type ContentModules = Record<
 	string,
-	() => Promise<{ default: Component; frontmatter: ContentFrontMatter }>
+	() => Promise<{ 
+		frontmatter: ContentFrontMatter
+	}>
 >;
 
 export type CollectionItem = {
@@ -21,8 +36,10 @@ export type CollectionItem = {
     url: string | null;
 	params: { [key: string]: string };
     frontmatter: ContentFrontMatter;
-    component: Component;
+	component: RenderedComponent
 }
+
+export type SummaryCollectionItem = Omit<CollectionItem, "component">;
 
 export type CollectionPage = {
 	page: number;
@@ -30,5 +47,5 @@ export type CollectionPage = {
 	previousPage: number;
 	hasNext: boolean;
 	nextPage: number;
-	items: Array<CollectionItem>
+	items: Array<SummaryCollectionItem>
 }

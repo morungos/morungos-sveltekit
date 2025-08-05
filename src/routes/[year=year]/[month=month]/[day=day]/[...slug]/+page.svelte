@@ -14,8 +14,11 @@ let { data }: Props = $props();
 	<meta name="description" content={ data.frontmatter.description } />
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_CA" />
+	{#if data.component.head}
+	{@html data.component.head}
+	{/if}
 </svelte:head>
 
 <article>
-	<data.component></data.component>
+	{@html data.component.body}
 </article>

@@ -6,7 +6,7 @@ interface Props {
     data: PageData;
 }
 
-let { data }: Props = $props();
+const { data }: Props = $props();
 </script>
 
 <svelte:head>
@@ -15,8 +15,11 @@ let { data }: Props = $props();
 		name="description"
 		content={data.frontmatter.description}
 	/>
+	{#if data.component.head}
+	{@html data.component.head}
+	{/if}
 </svelte:head>
 
 <article>
-	<data.component></data.component>
+	{@html data.component.body}
 </article>

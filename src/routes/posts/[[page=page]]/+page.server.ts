@@ -1,5 +1,5 @@
-import { getModulePage, modules } from "$lib/collections/posts";
-import type { PageLoad, EntryGenerator } from "./$types";
+import { getModulePage, getModules } from "$lib/collections/posts";
+import type { PageServerLoad, EntryGenerator } from "./$types";
 
 const BLOG_PAGE_SIZE = 5;
 
@@ -28,15 +28,22 @@ export const load = (async ({ params }) => {
         card: 'bg-about.jpg',
         cardAlt: `Sun reflecting off a distant coastline, showing bands of bright light against a dark shore.`
     }
-}) satisfies PageLoad;
+}) satisfies PageServerLoad;
 
 /**
  * The EntryGenerator should return all the blog pages, and that should suffice.
+ * Note, we do not even need to resolve the promises on the modukes themselves, 
+ * or render them. The identifiers are enough to compute a page list.
+ * 
  * @returns 
  */
-export const entries: EntryGenerator = () => {
+export const entries: EntryGenerator = async () => {
+    const modules = getModules();
     const pageCount = Math.ceil(Object.keys(modules).length / BLOG_PAGE_SIZE);
-    const rest: Array<{ page: string | undefined }> = new Array(pageCount).fill(true).map((x, i) => ({ page: 'page' + (i + 1) }))
+    const rest: Array<{ page: string | undefined }> = 
+        new Array(pageCount)
+            .fill(true)
+            .map((x, i) => ({ page: 'page' + (i + 1) }))
     return rest.concat([{ page: void 0}]);
 };
 

@@ -1,7 +1,6 @@
-import type { ContentModules } from "$lib/types";
 import { error } from "@sveltejs/kit";
-import type { EntryGenerator, PageLoad } from "./$types";
-import { getModules, paramsToPath, pathToParams } from "$lib/collections/pages";
+import type { EntryGenerator, PageServerLoad } from "./$types";
+import { getModules, paramsToPath, pathToParams, renderModule } from "$lib/collections/pages";
 
 export const prerender = true;
 export const ssr = true;
@@ -15,17 +14,22 @@ export const load = (async ({ params }) => {
         error(404, "Can't find content");
     }
 
-    const { default: component, frontmatter } = await contentModule().then();
+    const { frontmatter } = await contentModule();
+    const component = await renderModule(path);
 
     return { 
-        component, 
+        component,
         frontmatter,
         title: frontmatter.title,
         card: frontmatter.card,
 		cardAlt: frontmatter.card_alt
     };
-}) satisfies PageLoad;
+}) satisfies PageServerLoad;
 
+/**
+ * Never needs to render any modules, so we don't need components at all.
+ * @returns 
+ */
 export const entries: EntryGenerator = async () => {
     const modules = await getModules()
 
@@ -35,4 +39,3 @@ export const entries: EntryGenerator = async () => {
 
     return entries;
 };
-

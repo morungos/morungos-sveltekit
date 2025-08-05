@@ -1,10 +1,17 @@
-import type { CollectionPage, ContentModules } from '$lib/types';
-import { pathToBlogParams } from '$lib/utils';
+import type {
+    CollectionPage,
+    ContentModules,
+    LoadedModules,
+    RenderedComponent
+} from '$lib/types';
+
+import { render } from 'svelte/server';
 
 const PREFIX = 'src/lib/content/posts';
 const MATCHER = new RegExp('^/' + PREFIX + '/(\\d{4,4})-(\\d{2,2})-(\\d{2,2})-(.*?)\\.md')
 
-export const modules = import.meta.glob("$lib/content/posts/*.md") as ContentModules;
+// The modules themselves
+const modules = import.meta.glob("$lib/content/posts/*.md") as LoadedModules;
 
 export type CollectionParams = { year: string, month: string, day: string, slug: string}
 
@@ -34,12 +41,25 @@ export function pathToURL(path: string): string | null {
     }
 }
 
+/**
+ * Return all the modules -- this is effectively used for generating entries, so it
+ * does not need to be quite as performant. The modules themselves are promises, 
+ * that is.
+ * 
+ * @returns a list of content modules
+ */
 export async function getModules(): Promise<ContentModules> {
     return modules;
 }
 
+export async function renderModule(id: string): Promise<RenderedComponent> {
+    const component = await modules[id]()
+    return render(component.default);
+}
+
 export async function getModulePage(pageNumber: number, pageSize: number = 5): Promise<CollectionPage> {
 
+    // Sorts the modules by id -- at this stage, the modules are still promises
     const sorted = Object.entries(modules).sort((a, b) => b[0].localeCompare(a[0]))
     const start = pageNumber * pageSize
 
@@ -62,7 +82,6 @@ export async function getModulePage(pageNumber: number, pageSize: number = 5): P
             url: pageItemURLs[i],
             params: pageItemParams[i] ?? {},
             frontmatter: pageItemLoads[i].frontmatter,
-            component: pageItemLoads[i].default
         }))
     }
 }

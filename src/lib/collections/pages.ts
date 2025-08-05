@@ -1,9 +1,11 @@
-import type { ContentModules } from '$lib/types';
+import type { ContentModules, LoadedModules, RenderedComponent } from '$lib/types';
+
+import { render } from 'svelte/server';
 
 const PREFIX = 'src/lib/content/pages';
 const MATCHER = new RegExp('^/' + PREFIX + '/(.*?)\\.md')
 
-export const modules = import.meta.glob("$lib/content/pages/**/*.md") as ContentModules;
+const modules = import.meta.glob("$lib/content/pages/**/*.md") as LoadedModules;
 
 export type CollectionParams = { path: string}
 
@@ -32,4 +34,9 @@ export function pathToURL(path: string): string | null {
 
 export async function getModules(): Promise<ContentModules> {
     return modules;
+}
+
+export async function renderModule(id: string): Promise<RenderedComponent> {
+    const component = await modules[id]()
+    return render(component.default);
 }
