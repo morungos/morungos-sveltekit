@@ -1,15 +1,19 @@
 import MagicString from 'magic-string';
 import grayMatter from "gray-matter";
 import type { PluginOption } from 'vite';
+import type { GrayMatterFile } from 'gray-matter';
 import { markdownToTxt } from 'markdown-to-txt';
 
-const WORDS_PER_MINUTE = 200;
+const WORDS_PER_MINUTE = 200
 
 /**
  * A small Vite plugin that removes completely empty script elements
  * when they are at the start of a Markdown file. It should be harmless
  * anyway, but stops the Vite Svelte markdown plugin from messing up
  * front matter.
+ * 
+ * This plugin also generates a default frontmatter `excerpt` field that, by
+ * default, consists of the first paragraph. 
  */
 
 const defaultFrontMatter: { [key: string]: any } = {
@@ -18,6 +22,26 @@ const defaultFrontMatter: { [key: string]: any } = {
 
 const SCRIPTS_RE = /(<script[^>]*>)([\s\S]*?)<\/script>/gu;
 const SVELTE_TAGS_RE = /(<svelte:[a-z][^>]*>)([\s\S]*?)<\/svelte:[a-z]+>/gu;
+
+/**
+ * Retrieves an excerpt, Jekyll-style. 
+ * 
+ * @param parsedFrontmatter 
+ * @param text 
+ * @returns 
+ */
+function createExcerpt(parsedFrontmatter: GrayMatterFile<string>, text: string) {
+	let excerpt: string | null = null;
+
+	const paragraphs = text.split(/\n\s*\n/)
+	if (paragraphs.length > 0) {
+		excerpt = paragraphs[0].split(/\s+/).join(" ")
+	}
+
+	if (excerpt) {
+		parsedFrontmatter.data['excerpt'] = excerpt;
+	}
+}
 
 function preprocess(id: string, content: string) {
 	const s = new MagicString(content);
@@ -42,11 +66,7 @@ function preprocess(id: string, content: string) {
 	parsedFrontmatter.data['words'] = words;
 	
 	if (! parsedFrontmatter.data['excerpt']) {
-		const paragraphs = text.split(/\n\s*\n/)
-		if (paragraphs.length > 0) {
-			const firstWords = paragraphs[0].split(/\s+/).join(" ")
-			parsedFrontmatter.data['excerpt'] = firstWords
-		}
+		createExcerpt(parsedFrontmatter, text)
 	}
 
 	parsedFrontmatter.data = {...defaultFrontMatter, ...parsedFrontmatter.data};
