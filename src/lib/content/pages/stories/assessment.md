@@ -1,9 +1,9 @@
 ---
 title: AI and technology for assessment in higher education
-card: 'bg-about.jpg'
-card_alt: >
-  Sun reflecting off a distant coastline, showing bands of bright light 
-  against a dark shore.
+card: 'slidey0131.jpg'
+card_alt: >-
+  A lovely mountainous landscape in Scotland, crags in front, looking 
+  down to buildings on a lochside in the distance
 ---
 
 When I worked in academia, one of the areas I was early involved with

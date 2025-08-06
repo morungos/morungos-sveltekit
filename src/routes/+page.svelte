@@ -23,6 +23,7 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 
 <ul>
 <li><a href="2024/08/14/cheap-infrastructure/">Stuart’s guide to high-availability services on a budget</a></li>
+<li><a href="/stories/assessment/">AI and technology for assessment in higher education</a></li>
 <li><a href="/stories/chat/">Live chat component -- Svelte, Vite, and TypeScript for the win</a></li>
 <li><a href="/stories/syllabus/">Syllabus -- constraint satisfaction for timetabling</a></li>
 <li><a href="stories/translational/">Heliotrope and cBioPortal -- translational genomics in the clinic</a></li>
