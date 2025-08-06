@@ -1,8 +1,8 @@
 <script lang="ts">
-import type { SummaryCollectionItem } from "$lib/types";
-let { post }: { post: SummaryCollectionItem } = $props();
+import type { CollectionSummaryItem } from "$lib/types";
+let { item }: { item: CollectionSummaryItem } = $props();
 
-const fm = post.frontmatter
+const fm = item.frontmatter
 
 const formatter = new Intl.DateTimeFormat("en-CA", {
     day: 'numeric',
@@ -10,10 +10,10 @@ const formatter = new Intl.DateTimeFormat("en-CA", {
     year: 'numeric'
 });
 
-function getPostDate(post: SummaryCollectionItem) {
-    const year = post.params['year']
-    const month = post.params['month']
-    const day = post.params['day']
+function getItemDate(item: CollectionSummaryItem) {
+    const year = item.params['year']
+    const month = item.params['month']
+    const day = item.params['day']
     if (! year || ! month || ! day) {
         return null;
     }
@@ -30,27 +30,27 @@ function getPostDate(post: SummaryCollectionItem) {
     }
 }
 
-let postDate = $derived(getPostDate(post));
+let itemDate = $derived(getItemDate(item));
 </script>
 
-<div class="post-preview">
-{#if post.url}
-<a href={post.url}><h3 class="post-title">{ fm.title }</h3></a>
+<div class="item-preview">
+{#if item.url}
+<a href={item.url}><h3 class="item-title">{ fm.title }</h3></a>
 {:else}
-<h3 class="post-title">{ fm.title }</h3>
+<h3 class="item-title">{ fm.title }</h3>
 {/if}
 <p>
     { fm.excerpt }
-    {#if post.url}
-    <i><a href={ post.url }>... Read more...</a></i>
+    {#if item.url}
+    <i><a href={ item.url }>... Read more...</a></i>
     {/if}
 </p>
-<p class="post-meta">
+<p class="item-meta">
     {#if fm.author}
     by { fm.author } on
     {/if}
-    {#if postDate}
-    { postDate } 
+    {#if itemDate}
+    { itemDate } 
     {/if}
     {#if fm.words}
     {@const duration = Math.ceil(fm.words / 200)}
@@ -60,12 +60,12 @@ let postDate = $derived(getPostDate(post));
 </div>
 
 <style>
-.post-title {
+.item-title {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.post-meta {
+.item-meta {
     font-size: 18px;
     font-style: italic;
     margin-top: 0;

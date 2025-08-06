@@ -7,6 +7,7 @@ interface Props {
 }
 
 let { data }: Props = $props();
+let items = $derived(data.posts.items)
 </script>
 
 <p>
@@ -35,8 +36,8 @@ please feel free to read on, browse, or <a href="/contact/">contact me to find o
 
 <h2>Latest posts</h2>
 
-{#each data.posts.items as post}
-<BlogSummary post={ post } />
+{#each items as post}
+<BlogSummary item={ post } />
 {/each}
 
 <div class="button-container">

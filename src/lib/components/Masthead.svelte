@@ -13,10 +13,13 @@ import { modules } from '$lib/collections/cards'
 import { page } from '$app/state';
 
 let { 
-    title, card, cardAlt }: {
+    title,
+    card,
+    cardAlt,
+}: {
     title: string, 
     card: string, 
-    cardAlt: string 
+    cardAlt: string,
 } = $props();
 
 function getCard(card: string) {

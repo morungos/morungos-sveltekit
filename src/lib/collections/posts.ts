@@ -19,7 +19,7 @@ export function paramsToPath(year: string, month: string, day: string, slug: str
     return `/${PREFIX}/${year}-${month}-${day}-${slug.replace(/\/$/, "")}.md`;
 }
 
-export function pathToParams(path: string): CollectionParams | null {
+export function pathToParams(path: string): CollectionParams {
     let match: RegExpExecArray | null
     if (match = MATCHER.exec(path)) {
         return {
@@ -29,16 +29,12 @@ export function pathToParams(path: string): CollectionParams | null {
             slug: match[4],
         }
     }
-    return null;
+    throw new Error("Path doesn't match params in collection: posts")
 }
 
-export function pathToURL(path: string): string | null {
-    const params: CollectionParams | null = pathToParams(path);
-    if (params) {
-        return `/${params.year}/${params.month}/${params.day}/${params.slug}/`
-    } else {
-        return null;
-    }
+export function pathToURL(path: string): string {
+    const params: CollectionParams = pathToParams(path);
+    return `/${params.year}/${params.month}/${params.day}/${params.slug}/`
 }
 
 /**
@@ -67,9 +63,8 @@ export async function getModulePage(pageNumber: number, pageSize: number = 5): P
 
     const pageItems = Object.fromEntries(subset)
     const pageItemIds = Object.keys(pageItems)
+
     const pageItemLoads = await Promise.all(Object.values(pageItems).map((f) => f()))
-    const pageItemURLs = pageItemIds.map((id) => pathToURL(id))
-    const pageItemParams = pageItemIds.map((id) => pathToParams(id))
 
     return {
         page: pageNumber,
@@ -79,8 +74,8 @@ export async function getModulePage(pageNumber: number, pageSize: number = 5): P
         nextPage: pageNumber + 1,
         items: pageItemIds.map((id, i) => ({
             id: id,
-            url: pageItemURLs[i],
-            params: pageItemParams[i] ?? {},
+            url: pathToURL(id),
+            params: pathToParams(id),
             frontmatter: pageItemLoads[i].frontmatter,
         }))
     }

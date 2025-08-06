@@ -11,7 +11,7 @@ let items = $derived(data.page.items)
 </script>
 
 {#each items as post (post.id)}
-<BlogSummary post={ post } />
+<BlogSummary item={ post } />
 {/each}
 
 <div class="button-container" class:buttons-right={ ! data.page.hasPrevious }>

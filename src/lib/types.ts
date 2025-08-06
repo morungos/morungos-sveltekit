@@ -48,7 +48,7 @@ export type CollectionItem = {
 	component: RenderedComponent
 }
 
-export type SummaryCollectionItem = Omit<CollectionItem, "component">;
+export type CollectionSummaryItem = Omit<CollectionItem, "component">;
 
 export type CollectionPage = {
 	page: number;
@@ -56,5 +56,5 @@ export type CollectionPage = {
 	previousPage: number;
 	hasNext: boolean;
 	nextPage: number;
-	items: Array<SummaryCollectionItem>
+	items: Array<CollectionSummaryItem>
 }
