@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Tiny embedded language models
 card: 'bg-about.jpg'
 card_alt: >

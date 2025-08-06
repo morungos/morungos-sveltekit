@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A story about data manipulation in science
 draft: true
 author: Stuart

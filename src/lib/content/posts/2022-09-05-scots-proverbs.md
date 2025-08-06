@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Announcing @ScotsProverbBot: AI for Scots proverbs'
 author: Stuart
 card: 'slidey0131.jpg'

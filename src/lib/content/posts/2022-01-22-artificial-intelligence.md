@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Artificial intelligence: Big Science, bricolage, and beyond'
 author: Stuart
 card: 'complex-clock.jpg'

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: JavaScript word-extractor package release 1.0
 author: Stuart
 card: 'emigrant.jpg'

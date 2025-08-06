@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Outlook add-ins on the Mac
 author: Stuart
 summary: >-

@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 'WAIT 3'
 author: Stuart
 ---

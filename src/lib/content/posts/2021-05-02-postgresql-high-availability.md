@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Turalt's new application infrastructure
 author: Stuart
 card: 'oakwood-station-construction.jpg'

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Engines of rhetoric: the true nature of artificial intelligence'
 author: Stuart
 card: 'inspirational-quote.jpg'

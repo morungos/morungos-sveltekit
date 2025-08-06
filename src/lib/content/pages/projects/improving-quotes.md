@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Improving quote generation on small language models
 draft: true
 author: Stuart

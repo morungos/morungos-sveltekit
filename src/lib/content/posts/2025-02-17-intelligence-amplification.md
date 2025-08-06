@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "LLMs: intelligence amplification doesn't work on stupid people"
 author: Stuart
 card: 'kearney-lake.jpg'

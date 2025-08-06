@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A proxy server for developing and debugging PHP apps under FPM
 author: Stuart
 card: 'angry-cat-laptop.jpg'

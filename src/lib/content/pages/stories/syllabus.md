@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Syllabus
 card: 'bg-about.jpg'
 card_alt: >

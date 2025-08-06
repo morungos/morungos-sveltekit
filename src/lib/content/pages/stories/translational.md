@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 'Heliotrope and cBioPortal'
 subtitle: 'Translational bioinformatics in clinical research'
 card: 'bg-about.jpg'

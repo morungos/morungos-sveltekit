@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Welcome to Halifax
 author: Stuart
 card: 'kearney-lake.jpg'

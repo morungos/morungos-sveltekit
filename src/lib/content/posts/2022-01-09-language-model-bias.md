@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Generative language models and bias, or, does John give a fuck?
 author: Stuart
 card: 'scrabble-swearing.jpg'

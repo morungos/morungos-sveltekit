@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Cheese and the latent harms of foundation models'
 author: Stuart
 card: 'cheese.jpg'

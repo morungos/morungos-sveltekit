@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Evaluating courses without making tutors feel censured
 author: Stuart
 summary: >-

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Artificial Intelligence: A Very Capitalist Risk'
 author: Stuart
 card: 'ultraviolet.jpg'

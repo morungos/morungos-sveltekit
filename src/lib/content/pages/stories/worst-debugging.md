@@ -1,5 +1,4 @@
 ---
-layout: page
 title: My worst debugging experience
 card: 'bg-about.jpg'
 card_alt: >

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Comparison of XLSX modules for Perl
 author: Stuart
 summary: >-

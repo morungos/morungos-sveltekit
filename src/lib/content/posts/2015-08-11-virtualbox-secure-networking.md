@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Virtualbox secure networking
 author: Stuart
 summary: >-

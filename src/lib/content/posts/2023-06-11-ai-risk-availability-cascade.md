@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Something must be done about AI: availability cascades and existential risk'
 author: Stuart
 card: 'IMG_6794.jpg'

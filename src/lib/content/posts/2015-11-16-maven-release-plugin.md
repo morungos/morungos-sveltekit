@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Using the maven-release-plugin
 author: Stuart
 summary: >-

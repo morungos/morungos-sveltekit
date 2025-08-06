@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Stuart’s guide to high-availability services on a budget'
 author: Stuart
 ---

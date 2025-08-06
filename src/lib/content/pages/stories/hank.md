@@ -1,5 +1,4 @@
 ---
-layout: page
 title: 'Hank: a visual modelling language'
 card: 'bg-about.jpg'
 card_alt: >

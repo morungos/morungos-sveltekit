@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Misusing Turing for profit: 7 deadly sins of Turing tests in industry'
 author: Stuart
 card: '48349530722_4b0e1706ac_k.jpg'

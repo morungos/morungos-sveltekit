@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Silicon Valley and Political Rationalism'
 author: Stuart
 card: 'negative0304.jpg'

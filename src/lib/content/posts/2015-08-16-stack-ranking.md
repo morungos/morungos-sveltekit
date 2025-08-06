@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Stack ranking and Campbell's Law
 author: Stuart
 summary: >-

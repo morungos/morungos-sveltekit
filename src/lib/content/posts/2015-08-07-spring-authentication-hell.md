@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Spring authentication hell
 author: Stuart
 summary: >-

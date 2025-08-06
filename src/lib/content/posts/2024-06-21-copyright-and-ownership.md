@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Intellectual property and feudalism'
 author: Stuart
 card: 'Reeve_and_Serfs.jpg'

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Risky business: fear of AGI for fun and profit'
 author: Stuart
 card: 'monopoly-2636268_1920.jpg'
