@@ -11,7 +11,6 @@ let { data }: Props = $props();
 
 <svelte:head>
 	<title>{ data.frontmatter.title }</title>
-	<meta name="description" content={ data.frontmatter.description } />
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_CA" />
 	<meta property="og:image" content={ data.frontmatter.card } />
