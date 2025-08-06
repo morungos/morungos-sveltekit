@@ -3,34 +3,6 @@ import type { CollectionSummaryItem } from "$lib/types";
 let { item }: { item: CollectionSummaryItem } = $props();
 
 const fm = item.frontmatter
-
-const formatter = new Intl.DateTimeFormat("en-CA", {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
-});
-
-function getItemDate(item: CollectionSummaryItem) {
-    const year = item.params['year']
-    const month = item.params['month']
-    const day = item.params['day']
-    if (! year || ! month || ! day) {
-        return null;
-    }
-
-    try {
-        const parsedYear = parseInt(year)
-        const parsedMonth = parseInt(month)
-        const parsedDay = parseInt(day)
-
-        const date = new Date(parsedYear, parsedMonth, parsedDay)
-        return formatter.format(date);
-    } catch (e) {
-        return null;
-    }
-}
-
-let itemDate = $derived(getItemDate(item));
 </script>
 
 <div class="item-preview">
@@ -49,8 +21,8 @@ let itemDate = $derived(getItemDate(item));
     {#if fm.author}
     by { fm.author } on
     {/if}
-    {#if itemDate}
-    { itemDate } 
+    {#if item.date}
+    { item.date } 
     {/if}
     {#if fm.words}
     {@const duration = Math.ceil(fm.words / 200)}

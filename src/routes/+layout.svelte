@@ -42,6 +42,7 @@ import { page } from '$app/state';
 	card={ page.data.card}
 	title={ page.data.title}
 	cardAlt={ page.data.cardAlt }
+	subheading={ page.data.subheading }
 />
 <div class="container">
 	<div class="flex flex-col md:flex-row">

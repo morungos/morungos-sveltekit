@@ -8,6 +8,7 @@ export type ContentFrontMatter = {
 	summary?: string;
 	description?: string;
 	author?: string;
+	date?: string;
 	words?: number;
 	excerpt?: string;
 };
@@ -45,6 +46,7 @@ export type CollectionItem = {
     url: string | null;
 	params: { [key: string]: string };
     frontmatter: ContentFrontMatter;
+	date?: string | null;
 	component: RenderedComponent
 }
 

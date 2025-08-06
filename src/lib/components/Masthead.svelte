@@ -16,10 +16,12 @@ let {
     title,
     card,
     cardAlt,
+    subheading,
 }: {
     title: string, 
     card: string, 
     cardAlt: string,
+    subheading: string,
 } = $props();
 
 function getCard(card: string) {
@@ -51,7 +53,6 @@ function getCardImageURL(card: any): string {
     return src
 }
 
-
 const cardData = $derived(getCard(card))
 </script>
 
@@ -66,10 +67,11 @@ const cardData = $derived(getCard(card))
     <div class="overlay"></div>
     <div class="container masthead-body">
         <div class="pure-g">
-            <div class="pure-u-1">
-                <div class="masthead-heading">
-                    <h1>{ title ?? "" }</h1>
-                </div>
+            <div class="pure-u-1 masthead-heading-body">
+                <h1 class="masthead-heading">{ title ?? "" }</h1>
+                {#if subheading}
+                <h2 class="masthead-subheading">{ subheading }</h2>
+                {/if}
             </div>
         </div>
     </div>
@@ -83,6 +85,7 @@ const cardData = $derived(getCard(card))
     background-attachment: scroll;
     position: relative;
     background-size: cover;
+    min-height: 18rem;
 }
 
 .masthead-wrapper :global(picture) :global(img) {
@@ -106,16 +109,25 @@ const cardData = $derived(getCard(card))
     opacity: 0.5;
 }
 
-.masthead-heading {
-    text-align: center;
-    padding: 110px 0px 70px;
+.masthead-heading-body {
     position: relative;
-    color: white;
+    text-align: center;
+    padding: 70px 0 0 0;
 }
 
-.masthead-heading h1 {
+.masthead-heading {
+    color: white;
     font-size: 40px;
-    margin-top: 20px;
     min-height: 60px;
+    margin-bottom: 1em;
+}
+
+.masthead-subheading {
+    color: #ddd;
+    font-family: var(--body-font-family);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 1em;
 }
 </style>

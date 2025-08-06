@@ -7,6 +7,12 @@ import type {
 
 import { render } from 'svelte/server';
 
+const formatter = new Intl.DateTimeFormat("en-CA", {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+});
+
 const PREFIX = 'src/lib/content/posts';
 const MATCHER = new RegExp('^/' + PREFIX + '/(\\d{4,4})-(\\d{2,2})-(\\d{2,2})-(.*?)\\.md')
 
@@ -53,6 +59,30 @@ export async function renderModule(id: string): Promise<RenderedComponent> {
     return render(component.default);
 }
 
+export function getModuleDate(id: string): string {
+    const params = pathToParams(id);
+    return formatter.format(getDateFromParams(params))
+}
+
+function getDateFromParams(params: CollectionParams): Date {
+    const year = params['year']
+    const month = params['month']
+    const day = params['day']
+    if (! year || ! month || ! day) {
+        throw new Error(`Invalid date: ${year}-${month}-${day}`);
+    }
+
+    try {
+        const parsedYear = parseInt(year)
+        const parsedMonth = parseInt(month)
+        const parsedDay = parseInt(day)
+
+        return new Date(parsedYear, parsedMonth, parsedDay)
+    } catch (e) {
+        throw new Error(`Invalid date: ${year}-${month}-${day}`);
+    }
+}
+
 export async function getModulePage(pageNumber: number, pageSize: number = 5): Promise<CollectionPage> {
 
     // Sorts the modules by id -- at this stage, the modules are still promises
@@ -72,11 +102,14 @@ export async function getModulePage(pageNumber: number, pageSize: number = 5): P
         previousPage: pageNumber - 1,
         hasNext: (start + pageSize) < sorted.length,
         nextPage: pageNumber + 1,
-        items: pageItemIds.map((id, i) => ({
-            id: id,
-            url: pathToURL(id),
-            params: pathToParams(id),
-            frontmatter: pageItemLoads[i].frontmatter,
-        }))
+        items: pageItemIds.map((id, i) => {
+            const url = pathToURL(id)
+            const params = pathToParams(id)
+            const date = formatter.format(getDateFromParams(params))
+            return {
+                id, url, params, date,
+                frontmatter: pageItemLoads[i].frontmatter,
+            };
+        })
     }
 }
