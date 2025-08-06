@@ -5,11 +5,20 @@ export type ContentFrontMatter = {
 	title?: string;
 	card?: string;
 	card_alt?: string;
+	summary?: string;
 	description?: string;
 	author?: string;
 	words?: number;
 	excerpt?: string;
 };
+
+export type LayoutData = {
+	card: string,
+	cardAlt: string,
+	title?: string,
+	description?: string,
+	summary?: string
+}
 
 export type RenderedComponent = {
 	head: string;

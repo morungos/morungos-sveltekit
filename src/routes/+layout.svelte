@@ -27,7 +27,9 @@ import { page } from '$app/state';
 
 <svelte:head>
 	<title>{page.data.title}</title>
-	<!-- <meta name="description" content={data.frontmatter.description} /> -->
+{#if page.data.summary}
+	<meta name="description" content={ page.data.summary ?? page.data.description } />
+{/if}
 	<meta property="og:locale" content="en_CA" />
 	<meta property="og:site_name" content="Morungos" />
 {#if page.data.description}

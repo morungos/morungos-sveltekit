@@ -27,7 +27,9 @@ export const load = (async ({ params }) => {
         page: page,
         title: "Posts" + ((pageNumber > 1) ? ` (page ${pageNumber})` : ""),
         card: 'bg-about.jpg',
-        cardAlt: `Sun reflecting off a distant coastline, showing bands of bright light against a dark shore.`
+        cardAlt: `Sun reflecting off a distant coastline, showing bands of bright light against a dark shore`,
+        summary: `Page ${pageNumber} of the blog post index`,
+        description: `Page ${pageNumber} of the blog post index`,
     }
 }) satisfies PageServerLoad;
 
