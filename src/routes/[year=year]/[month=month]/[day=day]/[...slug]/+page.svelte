@@ -1,5 +1,4 @@
 <script lang="ts">
-import '$lib/content-styles.css';
 import type { PageData } from './$types.js';
 
 interface Props {

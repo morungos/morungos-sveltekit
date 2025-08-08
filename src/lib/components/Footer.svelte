@@ -28,7 +28,7 @@ let date = new Date();
         </a>
         </li>
     </ul>
-    <p class="copyright text-muted">Copyright &copy; Stuart Watt { date.getFullYear() }</p>
+    <p class="copyright">Copyright &copy; Stuart Watt { date.getFullYear() }</p>
   </div>
   </div>
 </footer>
@@ -75,7 +75,7 @@ let date = new Date();
 .copyright {
     text-align: center;
     font-size: 80%;
-    color: #888;
+    color: #444;
     margin-top: 0.5em;
 }
 </style>
