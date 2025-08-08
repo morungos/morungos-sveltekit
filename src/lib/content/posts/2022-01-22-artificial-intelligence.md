@@ -101,26 +101,26 @@ organizations and initiatives that typify virtually all of them, to the point
 they are almost exemplary. There are quite a few initiatives that appear to the
 model almost exactly. Here are the ones that I first thought of:
 
- * [IBM Watson](https://www.ibm.com/watson), building on IBM's competitive chess
+* [IBM Watson](https://www.ibm.com/watson), building on IBM's competitive chess
    and Jeopardy, Watson was launched as an IBM business in 2014 with $1B of
-   funding and several thousand employees. Watson is perhaps most intriguing as
-   it 'evolved' from GOFAI to ML, and integrates both. Originally intended as a
-   universal, open-domain, natural language question answering system, it since
-   evolved with the addition of perceptual and other techniques.
- * [OpenAI](https://openai.com/), founded in 2015 by, among others, Elon Musk,
-   Sam Altman, and Peter Thiel. OpenAI's actual intent is hard to assess:
-   originally it claimed to "democratize" AI to mitigate technological risks,
-   but it has since pivoted to a for-profit model and closed models. OpenAI is
-   closely integrated with both academic work (like Stanford's "foundational
-   models") and corporate research centres in Big Tech companies like Google and
-   Facebook.
- * [Alphabet's AI work](https://ai.google/) is perhaps the hardest to classify,
-   because there is an interlocking network of semi-autonomous corporations,
-   e.g., DeepMind, and more academic groups, e.g., Google Brain. Also, Google
-   being Google, it is hard to identify a strategy beyond "let's build stuff and
-   see what sticks". Those differences aside, it's definitively a Google-ified
-   version of Big Science. DeepMind was acquired by Google in 2014, and Google's
-   AI division dates to 2017.
+  funding and several thousand employees. Watson is perhaps most intriguing as
+  it 'evolved' from GOFAI to ML, and integrates both. Originally intended as a
+  universal, open-domain, natural language question answering system, it since
+  evolved with the addition of perceptual and other techniques.
+* [OpenAI](https://openai.com/), founded in 2015 by, among others, Elon Musk,
+  Sam Altman, and Peter Thiel. OpenAI's actual intent is hard to assess:
+  originally it claimed to "democratize" AI to mitigate technological risks,
+  but it has since pivoted to a for-profit model and closed models. OpenAI is
+  closely integrated with both academic work (like Stanford's "foundational
+  models") and corporate research centres in Big Tech companies like Google and
+  Facebook.
+* [Alphabet's AI work](https://ai.google/) is perhaps the hardest to classify,
+  because there is an interlocking network of semi-autonomous corporations,
+  e.g., DeepMind, and more academic groups, e.g., Google Brain. Also, Google
+  being Google, it is hard to identify a strategy beyond "let's build stuff and
+  see what sticks". Those differences aside, it's definitively a Google-ified
+  version of Big Science. DeepMind was acquired by Google in 2014, and Google's
+  AI division dates to 2017.
 
 There's a fair case for considering Japan's "Fifth Generation Computer" project
 from 1982 to 1992 as another Big Science project broadly in the field of AI,
@@ -853,9 +853,9 @@ motivated.](https://www.buymeacoffee.com/morungos)*
 
 * * *
 
-_**Disclosure**: I've worked on several Big Science projects, including the
+* ***Disclosure**: I've worked on several Big Science projects, including the
 [International Cancer Genome Project](https://dcc.icgc.org/) and [AACR Project
-Genie](https://www.aacr.org/professionals/research/aacr-project-genie/)._
+Genie](https://www.aacr.org/professionals/research/aacr-project-genie/).*
 
 ## References
 
