@@ -2,6 +2,7 @@ import { enhancedImages } from "@sveltejs/enhanced-img";
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import svelteMd from "vite-plugin-svelte-md";
+import mdTableOfContents from 'markdown-it-table-of-contents';
 import mdFootnotes from 'markdown-it-footnote';
 import mdAnchors from 'markdown-it-anchor';
 import mdAttrs from 'markdown-it-attrs';
@@ -19,6 +20,9 @@ export default defineConfig({
 				typographer: true,
 			},
 			markdownItUses: [
+                [ mdTableOfContents, {
+					includeLevel: [2]
+				}],
 				mdFootnotes, 
 				mdAnchors, 
 				[ mdAttrs, {
